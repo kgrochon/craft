@@ -149,3 +149,17 @@ body {
     /* The mat's green, until the desk paints over it. */
     background: #3e8e74;
 }
+
+/* Read by screen readers, not shown: headings, captions and the help text
+   behind the desk, where the picture carries the meaning on screen. */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
