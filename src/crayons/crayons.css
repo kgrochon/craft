@@ -1,0 +1,1985 @@
+/* Materials. Tokens cover the site's ink and paper; a crayon box needs
+   cardboard too. These sit at the root rather than on the page because the
+   home page stands a box on its own, away from the crayons page. */
+:root {
+    --paper: #fffdf6;
+    --box-card: #f0c244;
+    --box-card-dark: #d3a029;
+    --tray-card: #c99a68;
+    --tray-card-dark: #a87c4f;
+    --desk-ink: #2a2118;
+    --desk-dim: #4a4339;
+    --desk-rule: #b9b4ad;
+
+    /* The craft table. The sheet is butcher paper rather than the box's
+       white; exports read --sheet-paper so they look like the sheet. */
+    --sheet-paper: #f6ecd6;
+    --card: #fff7e0;
+    --kraft: #e7c48a;
+    --craft-red: #ff6b5e;
+    --craft-yellow: #ffcf2e;
+    --craft-blue: #6bb0f2;
+    --craft-green: #6fd49a;
+    --craft-pink: #ff8fb8;
+    --blob: 14px 20px 12px 18px;
+    --hard-shadow: 4px 4px 0 var(--desk-ink);
+    --font-craft: var(--font-alfphabet);
+    --font-hand: "Apfel Grotezk", system-ui, sans-serif;
+}
+
+/* ---------- the desk ---------- */
+
+/* Everything that moves reads its duration from here. */
+.desk {
+    --motion: 0.25s;
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    /* A green cutting mat, seen from its top-left corner. The grid is
+       drawn here, so it stays a steady 20px "centimetre" on any screen and
+       repeats as far as the screen goes; mat.svg lays the ruled edge and
+       the angle guides over it. A screen only ever shows a section of the
+       mat. The grid starts inside the ruled edge, at --mat-x + --mat-edge. */
+    --mat-x: 0px;
+    --mat-y: 0px;
+    --mat-edge: 36px;
+    --mat-green: #2c7049;
+    --mat-line: rgba(216, 238, 221, 0.13);
+    --mat-line-major: rgba(216, 238, 221, 0.3);
+    --mat-grid: calc(var(--mat-x) + var(--mat-edge))
+        calc(var(--mat-y) + var(--mat-edge));
+    background:
+        url("./mat.svg") var(--mat-x) var(--mat-y) / 3000px 2000px no-repeat,
+        linear-gradient(90deg, var(--mat-line-major) 0 1px, transparent 1px)
+            var(--mat-grid) / 100px 100px,
+        linear-gradient(var(--mat-line-major) 0 1px, transparent 1px)
+            var(--mat-grid) / 100px 100px,
+        linear-gradient(90deg, var(--mat-line) 0 1px, transparent 1px)
+            var(--mat-grid) / 20px 20px,
+        linear-gradient(var(--mat-line) 0 1px, transparent 1px)
+            var(--mat-grid) / 20px 20px,
+        var(--mat-green);
+    color: var(--desk-ink);
+    /* A long press shouldn't select text or pop up a menu, a double tap
+       shouldn't zoom, and nothing should rubber-band. */
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    touch-action: manipulation;
+    overscroll-behavior: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .desk {
+        --motion: 0s;
+    }
+}
+
+/* The whole page is the paper. */
+/* The room on the table the sheet has. A blank sheet fills it; a drawing
+   keeps the shape it was started on and sits in the middle of it (Crayons
+   sizes the sheet). */
+.paper-room {
+    position: absolute;
+    /* The left edge clears the shelf and the sharpener standing beside the
+       tray; the strip below lines up with it. */
+    inset: 92px 40px calc(var(--strip-h) + 36px) 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Butcher paper lying on the mat, with the mat showing round the edge.
+   Pointer positions are read off the canvas's own rect, so inset is safe. */
+.paper-sheet {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 100%;
+    background: var(--sheet-paper);
+    box-shadow:
+        0 8px 0 rgba(42, 33, 24, 0.22),
+        0 16px 28px rgba(0, 0, 0, 0.28);
+}
+
+/* A drawing the other way round to the screen lies a quarter-turn over, so
+   it fills the screen; the canvas inside is its own shape. The shadow is
+   turned back the other way, so it still falls towards the bottom of the
+   screen. */
+.paper-sheet[data-turned] {
+    transform: rotate(90deg);
+    box-shadow:
+        8px 0 0 rgba(42, 33, 24, 0.22),
+        16px 0 28px rgba(0, 0, 0, 0.28);
+}
+
+.paper-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* A finger on the paper draws: it doesn't scroll or zoom the page. */
+    touch-action: none;
+}
+
+.paper-canvas.focused {
+    outline: 3px solid var(--color-electric-orange, #ff5a00);
+    outline-offset: -3px;
+}
+
+/* ---------- the floating bar ---------- */
+
+.desk-bar {
+    position: absolute;
+    top: var(--spacing-md);
+    left: var(--spacing-md);
+    right: var(--spacing-md);
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    /* Top-aligned: the saved stack stands taller than the pills. */
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+    pointer-events: none;
+}
+
+.bar-pill {
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    background: var(--card);
+    border: 3px solid var(--desk-ink);
+    border-radius: var(--blob);
+    box-shadow: var(--hard-shadow);
+    transform: rotate(-0.6deg);
+}
+
+.bar-tools {
+    transform: rotate(0.5deg);
+}
+
+.bar-pill button {
+    --tilt: -1.5deg;
+    min-height: 44px;
+    padding: 0 16px;
+    border: 3px solid var(--desk-ink);
+    border-radius: var(--blob);
+    background: var(--craft-red);
+    color: var(--desk-ink);
+    font-family: var(--font-craft);
+    font-size: var(--font-size-md);
+    box-shadow: var(--hard-shadow);
+    transform: rotate(var(--tilt));
+    transition:
+        transform var(--motion) ease,
+        box-shadow var(--motion) ease;
+    cursor: pointer;
+}
+
+/* Every tool its own sheet of construction paper. */
+.bar-pill button:nth-of-type(2) {
+    --tilt: 1.5deg;
+    background: var(--craft-yellow);
+}
+
+.bar-pill button:nth-of-type(3) {
+    --tilt: -1deg;
+    background: var(--craft-blue);
+}
+
+.bar-pill button:nth-of-type(4) {
+    --tilt: 2deg;
+    background: var(--craft-green);
+}
+
+.bar-pill button:nth-of-type(5) {
+    --tilt: -2deg;
+    background: var(--craft-pink);
+}
+
+.bar-pill button:hover:not(:disabled, [aria-disabled="true"]) {
+    transform: translateY(-2px) rotate(var(--tilt));
+}
+
+/* Pressed flat onto the table. */
+.bar-pill button:active:not(:disabled, [aria-disabled="true"]) {
+    transform: translate(3px, 3px) rotate(var(--tilt));
+    box-shadow: 1px 1px 0 var(--desk-ink);
+}
+
+.bar-pill button:focus-visible {
+    outline: 3px solid var(--desk-ink);
+    outline-offset: 3px;
+}
+
+.bar-pill button:disabled,
+.bar-pill button[aria-disabled="true"] {
+    opacity: 0.5;
+    filter: saturate(0.4);
+    box-shadow: 2px 2px 0 var(--desk-ink);
+    cursor: not-allowed;
+}
+
+/* Sets the export formats off from the buttons that act on the drawing. */
+.bar-rule {
+    align-self: stretch;
+    width: 0;
+    margin: 6px 4px;
+    border-left: 3px dashed var(--desk-ink);
+}
+
+.bar-label {
+    font-family: var(--font-hand);
+    font-size: var(--font-size-md);
+    color: var(--desk-ink);
+}
+
+/* ---------- the saved stack, top right ---------- */
+
+.saved-stack {
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px 4px;
+    border: 0;
+    border-radius: 12px;
+    background: none;
+    color: var(--desk-ink);
+    font: inherit;
+    cursor: pointer;
+}
+
+.saved-stack:focus-visible {
+    outline: 3px solid var(--color-electric-orange, #ff5a00);
+    outline-offset: 2px;
+}
+
+.saved-papers {
+    position: relative;
+    width: 84px;
+    height: 58px;
+}
+
+.saved-paper {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    border: 3px solid var(--desk-ink);
+    border-radius: 3px;
+    background: #ffffff;
+    box-shadow: 3px 3px 0 var(--desk-ink);
+    transition: transform var(--motion) ease;
+}
+
+.saved-paper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* At rest, a slightly untidy pile. */
+.saved-paper.under {
+    transform: translate(5px, -4px) rotate(5deg);
+}
+
+.saved-paper.top {
+    transform: rotate(-2deg);
+}
+
+/* Handled, the two papers fan apart. Someone who asked for stillness gets
+   the pile as it lies. */
+@media (prefers-reduced-motion: no-preference) {
+    .saved-stack:is(:hover, :focus-visible) .saved-paper.under {
+        transform: translate(14px, -7px) rotate(12deg);
+    }
+
+    .saved-stack:is(:hover, :focus-visible) .saved-paper.top {
+        transform: translate(-5px, 1px) rotate(-8deg);
+    }
+}
+
+.saved-label {
+    padding: 2px 12px;
+    border: 3px solid var(--desk-ink);
+    border-radius: var(--blob);
+    background: var(--craft-yellow);
+    box-shadow: 2px 2px 0 var(--desk-ink);
+    font-family: var(--font-hand);
+    font-size: var(--font-size-md);
+    white-space: nowrap;
+    transform: rotate(2deg);
+}
+
+/* A paper clip on the pile. */
+.saved-papers::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    z-index: 3;
+    width: 12px;
+    height: 28px;
+    border: 3px solid #8a8a8a;
+    border-radius: 7px;
+    pointer-events: none;
+}
+
+/* ---------- the gallery ---------- */
+
+.gallery {
+    /* The reset zeroes the margin a browser centres a modal with. */
+    margin: auto;
+    width: min(920px, calc(100vw - 32px));
+    max-height: calc(100dvh - 32px);
+    /* No padding: a click that lands on the dialog itself is a click on the
+       dimmed page around it, which closes it. */
+    padding: 0;
+    border: 3px solid var(--desk-ink);
+    border-radius: var(--blob);
+    background: var(--card);
+    box-shadow: 6px 6px 0 var(--desk-ink);
+    color: var(--desk-ink);
+}
+
+.gallery::backdrop {
+    background: rgba(43, 42, 40, 0.45);
+}
+
+.gallery-inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+}
+
+.gallery-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+}
+
+.gallery-head h2,
+.gallery-detail h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    font-size: var(--font-size-md);
+    font-weight: 800;
+}
+
+.gallery button:not(.gallery-tile) {
+    min-height: 40px;
+    padding: 0 16px;
+    border: 3px solid var(--desk-ink);
+    border-radius: var(--blob);
+    background: var(--craft-yellow);
+    color: var(--desk-ink);
+    font-family: var(--font-craft);
+    font-size: var(--font-size-md);
+    box-shadow: 3px 3px 0 var(--desk-ink);
+    cursor: pointer;
+}
+
+.gallery button:not(.gallery-tile):hover:not(:disabled) {
+    background: #ffe066;
+}
+
+.gallery button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.gallery button.danger {
+    border-color: #a3261d;
+    color: #a3261d;
+}
+
+.gallery :focus-visible {
+    outline: 3px solid var(--color-electric-orange, #ff5a00);
+    outline-offset: 2px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 18px 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gallery-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.gallery-thumb {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border: 2px solid var(--desk-ink);
+    border-radius: 6px;
+    background: var(--paper);
+    transition: transform var(--motion) ease;
+}
+
+.gallery-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .gallery-tile:is(:hover, :focus-visible) .gallery-thumb {
+        transform: rotate(-1.5deg);
+    }
+}
+
+.gallery-date {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+}
+
+.gallery-tag {
+    padding: 1px 8px;
+    border-radius: 999px;
+    background: var(--desk-ink);
+    color: #ffffff;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+}
+
+.gallery-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.gallery-big {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 58vh;
+    align-self: center;
+    border: 2px solid var(--desk-ink);
+    border-radius: 6px;
+    background: var(--paper);
+}
+
+.gallery-meta,
+.gallery-note {
+    margin: 0;
+    color: var(--desk-dim);
+    font-size: var(--font-size-sm);
+}
+
+.gallery-actions,
+.gallery-confirm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.gallery-confirm {
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #f6f3ec;
+}
+
+.gallery-confirm p {
+    flex-basis: 100%;
+    margin: 0;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+}
+
+/* ---------- the tray along the bottom ---------- */
+
+/* One slim strip lined up with the sheet; the box opens above it. */
+.tray {
+    position: absolute;
+    left: 300px;
+    right: 40px;
+    bottom: 20px;
+    z-index: 3;
+}
+
+/* ---------- the sharpener standing beside the tray ---------- */
+
+/* It stands on the same line as the tray, between the shelf and the strip,
+   taller than the strip: the crayon in hand stands up out of its hole. */
+.sharpener-stand {
+    position: absolute;
+    left: 214px;
+    bottom: 20px;
+    z-index: 3;
+    width: 64px;
+}
+
+.grinder {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    background: none;
+    color: var(--desk-ink);
+    cursor: pointer;
+    /* A hold must grind, not scroll, select or pop up a menu. */
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.grinder:focus-visible {
+    outline: 3px solid var(--desk-ink);
+    outline-offset: 4px;
+}
+
+.grinder[aria-disabled="true"] {
+    cursor: default;
+}
+
+.stand-art {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    transition: transform var(--motion) ease;
+}
+
+.grinder:not([aria-disabled="true"]):hover .stand-art {
+    transform: rotate(-2deg);
+}
+
+/* The crayon is in the hole only while it grinds. It sinks as it is used
+   up: what shows above the rim is what is left of it. */
+.stand-crayon {
+    opacity: 0;
+    transform: translateY(var(--drop));
+    transition:
+        opacity var(--motion) ease,
+        transform var(--motion) ease;
+}
+
+.sharpener-stand[data-grinding] .stand-crayon {
+    opacity: 1;
+}
+
+.stand-crayon .wax {
+    fill: var(--wax);
+}
+
+.stand-crayon .ink {
+    fill: var(--desk-ink);
+    stroke: var(--desk-ink);
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+}
+
+/* Twisted back and forth in the hole while it grinds. */
+.stand-twist {
+    transform-box: fill-box;
+    transform-origin: 50% 85%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .sharpener-stand[data-grinding] .stand-twist {
+        animation: grind-twist 0.16s ease-in-out infinite alternate;
+    }
+}
+
+@keyframes grind-twist {
+    from {
+        transform: rotate(-2.5deg) translateY(-3px);
+    }
+    to {
+        transform: rotate(2.5deg) translateY(1px);
+    }
+}
+
+/* ---------- left: the shelf and the cat ---------- */
+
+/* The shelf is a rail down the left of the table, a slice of the app of its
+   own: the boxes stacked, the cat under them. */
+.shelf-rail {
+    position: absolute;
+    top: 92px;
+    left: 24px;
+    z-index: 2;
+    width: 176px;
+}
+
+.shelf {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-lg);
+}
+
+.shelf-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Each box in its own cardboard bin, name and count written on the front. */
+.shelf-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 10px 10px;
+    border: 3px solid var(--desk-ink);
+    border-radius: var(--blob);
+    background: var(--kraft);
+    box-shadow: var(--hard-shadow);
+    transform: rotate(-1.2deg);
+    cursor: pointer;
+    transition:
+        transform var(--motion),
+        background-color var(--motion);
+}
+
+.shelf-box:nth-of-type(2) {
+    transform: rotate(1deg);
+}
+
+.shelf-box:nth-of-type(3) {
+    transform: rotate(-0.6deg);
+}
+
+.shelf-box.open {
+    background: var(--craft-yellow);
+}
+
+.shelf-box .box-art {
+    --art-unit: 0.72px;
+    width: min(100%, calc(var(--art-w) * var(--art-unit)));
+    height: auto;
+}
+
+/* A box we have real art for, sized to stand level with the drawn ones. */
+.shelf-portrait {
+    display: block;
+    flex: none;
+    height: 104px;
+    width: auto;
+}
+
+.shelf-box:hover {
+    transform: translateY(-3px) rotate(0deg);
+}
+
+.shelf-box:has(input:focus-visible) {
+    outline: 3px solid var(--desk-ink);
+    outline-offset: 3px;
+}
+
+.shelf-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    font-family: var(--font-hand);
+    line-height: 1.1;
+    text-align: center;
+}
+
+.shelf-name {
+    font-size: var(--font-size-md);
+}
+
+.shelf-count {
+    font-size: var(--font-size-sm);
+    color: var(--desk-dim);
+}
+
+.cat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 8px 8px;
+    align-self: center;
+    border: 3px dashed var(--desk-ink);
+    border-radius: 26px 26px 8px 8px;
+    background: var(--card);
+    color: var(--desk-ink);
+    font: inherit;
+    cursor: pointer;
+    transition: transform var(--motion);
+}
+
+.cat:hover {
+    transform: translateY(-4px) rotate(-3deg);
+}
+
+.cat-face {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 30px;
+    border-radius: 50% 50% 46% 46%;
+    background: #d9d5cf;
+    box-shadow: inset 0 0 0 2px var(--desk-ink);
+}
+
+.cat-ear {
+    position: absolute;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid var(--desk-ink);
+}
+
+.cat-ear.left {
+    left: 3px;
+    transform: rotate(-12deg);
+}
+
+.cat-ear.right {
+    right: 3px;
+    transform: rotate(12deg);
+}
+
+.cat-eye {
+    position: absolute;
+    top: 12px;
+    width: 4px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--desk-ink);
+}
+
+.cat-eye.left {
+    left: 10px;
+}
+
+.cat-eye.right {
+    right: 10px;
+}
+
+/* Asked for stillness, the cat naps. */
+@media (prefers-reduced-motion: reduce) {
+    .cat-eye {
+        height: 2px;
+        border-radius: 2px;
+    }
+}
+
+.cat-nose {
+    position: absolute;
+    top: 19px;
+    left: 50%;
+    width: 5px;
+    height: 4px;
+    transform: translateX(-50%);
+    border-radius: 2px 2px 50% 50%;
+    background: var(--wax, #b4674d);
+}
+
+.cat-mood {
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* ---------- middle: the open box ---------- */
+
+/* container-type makes the bay's width independent of what is in it, so it
+   has to be given one; the crayons then divide that width between them. */
+.open-box-bay {
+    container-type: inline-size;
+    /* Only as wide as the crayons need at their fullest (36px each), and
+       narrower if the lid has less room: they then shrink to fit. */
+    width: calc(
+        var(--cols) * 36px + (var(--cols) - 1) * 2px + 2 * var(--spacing-md)
+    );
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+.open-box {
+    /* Never under 24px across: WCAG 2.2's minimum target size (2.5.8), and
+       every crayon is its own target. OpenBox deals the tiers so the width
+       that falls out here is comfortably over it. */
+    --crayon-w: clamp(
+        24px,
+        calc(
+            (100cqw - 2 * var(--spacing-md) - (var(--cols) - 1) * 2px) /
+                var(--cols)
+        ),
+        36px
+    );
+    /* The wrapper at full length. The box is not the point, the crayons are,
+       so only a stub of wrapper shows under the collar. */
+    --crayon-h: calc(var(--crayon-w) * 0.35);
+    /* One full crayon (cone, collar, wrapper: 1.263 + 0.526 + 0.35 of the
+       width) and a gap. Tiers are rows set one clear of the next, none in front
+       of another, so every crayon shows whole and every one is a whole target. */
+    --tier-step: calc(var(--crayon-w) * 2.139 + 8px);
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+}
+
+.box-tiers {
+    position: relative;
+    height: calc(var(--tiers) * var(--tier-step) - 4px);
+}
+
+.box-tier {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(var(--depth) * var(--tier-step));
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2px;
+}
+
+.box-crayon {
+    position: relative;
+    display: flex;
+    width: var(--crayon-w);
+    /* A worn-down stub is still a full-size target. */
+    min-height: 24px;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform var(--motion);
+}
+
+/* The crayon is the tin's: flat colour, a thin black outline, a rounded cone,
+   a narrow collar, a wrapper. The pieces scale off the crayon's width (the
+   drawing is 38 across), so it keeps the tin's proportions at any size. */
+.box-crayon svg {
+    display: block;
+    width: 100%;
+    overflow: visible;
+}
+
+.box-crayon .wax {
+    fill: var(--wax);
+}
+
+.box-crayon .ink {
+    fill: none;
+    stroke: var(--desk-ink);
+    stroke-width: 1px;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+}
+
+/* A sharp tip is a tall cone, a blunt one a squat dome. */
+.crayon-tip {
+    height: calc(var(--crayon-w) * 1.263 * (0.35 + 0.65 * var(--point)));
+}
+
+.crayon-collar {
+    height: calc(var(--crayon-w) * 0.526);
+}
+
+/* What is left of the crayon, straight off its length. */
+.crayon-body {
+    height: calc(var(--crayon-h) * var(--stub));
+}
+
+/* A nudge, small enough to stay inside the gap between rows. */
+.box-crayon:hover {
+    transform: translateY(-3px);
+}
+
+/* The crayon in hand is ringed and lit, not lifted: a lift would cover the
+   row behind it, and a colour alone is not a way to say which is held. */
+.box-crayon.in-hand {
+    align-items: center;
+    gap: 0;
+    z-index: 20;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 0 0 3px var(--desk-ink);
+}
+
+.box-crayon:has(input:focus-visible) {
+    z-index: 21;
+    outline: 2px solid var(--desk-ink);
+    outline-offset: 2px;
+}
+
+.open-box .box-front {
+    display: block;
+    width: 100%;
+    height: 42px;
+    margin-top: 4px;
+    position: relative;
+    z-index: 15;
+}
+
+.open-box .box-front-label {
+    position: relative;
+    z-index: 16;
+    margin: -30px 0 0;
+    text-align: center;
+    font-size: var(--font-size-xs);
+    font-weight: 800;
+    color: #6b4a08;
+}
+
+/* ---------- right: the crayon in hand ---------- */
+
+.in-hand {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--spacing-md);
+}
+
+.sharpener-slot {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.sharpener {
+    display: grid;
+    place-items: center;
+    width: 76px;
+    height: 60px;
+    padding: 0;
+    border: 3px solid var(--desk-ink);
+    border-radius: var(--blob);
+    background: var(--craft-blue);
+    box-shadow: 3px 3px 0 var(--desk-ink);
+    color: var(--desk-ink);
+    cursor: pointer;
+    transition: transform var(--motion);
+}
+
+.sharpener svg {
+    width: 50px;
+    height: 36px;
+}
+
+.sharpener:hover:not(:disabled) {
+    transform: rotate(-6deg);
+}
+
+.sharpener:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.sharpener-label {
+    font-family: var(--font-hand);
+    font-size: var(--font-size-md);
+    color: var(--desk-dim);
+}
+
+.meter-word {
+    min-width: 108px;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    color: var(--desk-dim);
+}
+
+.meter {
+    flex: 1;
+    height: 9px;
+    border: 2px solid var(--desk-ink);
+    border-radius: 999px;
+    overflow: hidden;
+    background: #f4f2ee;
+}
+
+.meter-fill {
+    display: block;
+    height: 100%;
+    width: var(--at);
+    background: var(--desk-ink);
+    transition: width var(--motion);
+}
+
+.meter-fill.wax {
+    background: var(--wax);
+    box-shadow: inset 0 0 0 1px rgba(24, 50, 70, 0.25);
+}
+
+/* ---------- the tray as a lid strip ---------- */
+
+/* The tray is one slim strip while you draw, and the box lies open over the
+   paper only while you choose. The strip lines up with the sheet, and the
+   sheet's room stops above it instead of running underneath. */
+.desk {
+    --strip-h: 84px;
+}
+
+.tray-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm) var(--spacing-lg);
+    box-sizing: border-box;
+    /* 10px padding and a 3px border each side around 58px of content;
+       .in-hand-strip is pinned to that 58px so nothing nudges it. */
+    min-height: 84px;
+    padding: 10px var(--spacing-lg);
+    border: 3px solid var(--desk-ink);
+    border-radius: 18px;
+    background: var(--kraft);
+    box-shadow: var(--hard-shadow);
+}
+
+.lid-btn {
+    min-height: 44px;
+    padding: 4px 18px;
+    border: 3px solid var(--desk-ink);
+    border-radius: var(--blob);
+    background: var(--craft-yellow);
+    box-shadow: 3px 3px 0 var(--desk-ink);
+    color: var(--desk-ink);
+    font-family: var(--font-craft);
+    font-size: var(--font-size-md);
+    line-height: 1.1;
+    cursor: pointer;
+    transition: transform var(--motion);
+}
+
+.lid-btn:hover {
+    transform: translateY(-1px);
+}
+
+.lid-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 var(--desk-ink);
+}
+
+.lid-btn:focus-visible,
+.palette-chip:focus-visible {
+    outline: 3px solid var(--desk-ink);
+    outline-offset: 3px;
+}
+
+.lid-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 52px;
+}
+
+.lid-toggle small {
+    font-family: var(--font-hand);
+    font-size: var(--font-size-xs);
+    color: var(--desk-dim);
+}
+
+.palette {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.palette-slot {
+    position: relative;
+}
+
+/* 40px, so the 24px minimum has room to spare. */
+.palette-chip {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 3px solid var(--desk-ink);
+    border-radius: var(--blob);
+    background: var(--wax);
+    color: var(--desk-ink);
+    cursor: pointer;
+    transition: transform var(--motion);
+}
+
+.palette-chip:hover {
+    transform: translateY(-2px) rotate(-3deg);
+}
+
+/* A gap waiting to be filled: dashed, with a plus. */
+.palette-chip[data-empty="true"] {
+    border-style: dashed;
+    background: rgba(255, 247, 224, 0.6);
+    font: 700 20px/1 var(--font-craft);
+}
+
+/* An empty slot the box can't fill: every crayon is already in. */
+.palette-chip[data-spare="true"] {
+    opacity: 0.45;
+    cursor: default;
+}
+
+.palette-chip[data-spare="true"]:hover {
+    transform: none;
+}
+
+/* The × that takes the chosen slot's crayon out, pinned to its corner. */
+.palette-remove {
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 2px solid var(--card);
+    border-radius: 50%;
+    background: var(--desk-ink);
+    cursor: pointer;
+}
+
+.palette-remove svg {
+    width: 12px;
+    height: 12px;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+}
+
+.palette-remove:hover {
+    background: #b3321f;
+}
+
+.palette-remove:focus-visible {
+    outline: 3px solid var(--desk-ink);
+    outline-offset: 2px;
+}
+
+/* The held one is ringed, not just coloured. */
+.palette-chip[aria-pressed="true"] {
+    box-shadow:
+        0 0 0 3px var(--kraft),
+        0 0 0 6px var(--desk-ink);
+}
+
+/* The lid: the open box, laid over the paper just above the strip. The lid
+   itself is only the room it may take, and lets clicks through to the paper;
+   the panel in it is as wide as the crayons need, and sits in the middle. */
+.lid {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(100% + 12px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.lid-panel {
+    pointer-events: auto;
+    width: fit-content;
+    max-width: 100%;
+    max-height: calc(100dvh - var(--strip-h) - 160px);
+    overflow-y: auto;
+    /* A scrollbar appearing would narrow the box and change its rows. */
+    scrollbar-gutter: stable;
+    box-sizing: border-box;
+    padding: 12px var(--spacing-lg) var(--spacing-md);
+    border: 3px solid var(--desk-ink);
+    border-radius: 18px;
+    background: var(--kraft);
+    box-shadow: 6px 6px 0 var(--desk-ink);
+}
+
+.lid-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--spacing-sm) var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* The palette and its reset stay together when the strip wraps. */
+.palette-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.palette-reset,
+.palette-random {
+    min-height: 40px;
+    padding: 0 14px;
+    background: var(--card);
+    font-size: var(--font-size-sm);
+}
+
+.palette-random {
+    background: var(--craft-pink);
+}
+
+.palette-reset[aria-disabled="true"] {
+    opacity: 0.5;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.lid-done {
+    background: var(--craft-green);
+}
+
+/* A crayon in the palette keeps its colour but gets a dashed outline and
+   the number of the slot it went to. The one in hand has a solid outline
+   and a filled number. Shape and number carry it, not colour. */
+.box-crayon.in-palette .ink {
+    stroke-dasharray: 3 2;
+}
+
+.box-crayon.in-palette.in-hand {
+    background: none;
+    box-shadow: none;
+}
+
+.box-crayon.in-palette.in-hand .ink {
+    stroke-dasharray: none;
+    stroke-width: 2px;
+}
+
+.ghost-slot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 3px;
+    box-sizing: border-box;
+    border: 2px solid var(--desk-ink);
+    border-radius: 999px;
+    background: var(--card);
+    color: var(--desk-ink);
+    font: 800 11px/1 var(--font-sans, system-ui, sans-serif);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.box-crayon.in-hand .ghost-slot {
+    background: var(--desk-ink);
+    color: #fff;
+}
+
+/* The crayon in hand, in one compact row for the strip. Its height is a
+   fixed 58px (the strip's 84px less padding and border), so the strip
+   measures the same with a crayon in hand (name, year and two meters) as
+   with the dashed ghost. It must not be derived from --strip-h: that
+   variable is measured from the strip itself, and would feed back. */
+.in-hand-strip {
+    align-items: center;
+    height: 58px;
+}
+
+.in-hand-strip .chip-text {
+    line-height: 1.3;
+}
+
+.in-hand-strip .chip-meters {
+    flex-wrap: nowrap;
+}
+
+.in-hand-strip .meter-word {
+    white-space: nowrap;
+}
+
+.in-hand-strip .sharpener {
+    width: 64px;
+    height: 48px;
+}
+
+.in-hand-strip .sharpener svg {
+    width: 42px;
+    height: 30px;
+}
+
+.in-hand-strip .sharpener-label {
+    display: none;
+}
+
+.hand-chip {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* The empty hand: a crayon's outline, dashed, lying where one would. */
+.ghost-hand {
+    width: 92px;
+    height: 32px;
+    overflow: visible;
+    transform: rotate(-3deg);
+}
+
+.ghost-hand path {
+    fill: rgba(255, 247, 224, 0.55);
+    stroke: var(--desk-ink);
+    stroke-width: 2;
+    stroke-dasharray: 4 3;
+    stroke-linejoin: round;
+}
+
+/* The crayon in hand, drawn like the box's crayons, lying on its side. */
+.hand-crayon {
+    flex: none;
+    overflow: visible;
+    transform: rotate(-4deg);
+}
+
+.hand-crayon .wax {
+    fill: var(--wax);
+}
+
+.hand-crayon .ink {
+    fill: none;
+    stroke: var(--desk-ink);
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+}
+
+.chip-name {
+    font-family: var(--font-craft);
+    font-size: var(--font-size-md);
+    line-height: 1.1;
+}
+
+.chip-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.chip-meta {
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    color: var(--desk-dim);
+}
+
+.chip-meters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 14px;
+}
+
+.chip-meter {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Fixed widths, sized for the longest wording ("rounded · 12px line",
+   "worn to a nub"), so the words changing as the crayon wears never shift
+   the meters or the strip. */
+.chip-meter .meter-word {
+    min-width: 0;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.chip-meter:first-child .meter-word {
+    width: 19ch;
+}
+
+.chip-meter:last-child .meter-word {
+    width: 13ch;
+}
+
+.chip-meter .meter {
+    flex: none;
+    width: 56px;
+}
+
+/* ---------- off the desk ---------- */
+
+/* Under 1100px wide the desk is laid out by Crayons' data-layout, not by
+   pinning pieces in place: a grid, so a row that wraps pushes the paper
+   along instead of landing on it.
+
+   - drawer: a screen held upright. Bar, paper, then the tray as a drawer
+     along the bottom. The shelf moves inside the box when it opens.
+   - rail: a phone on its side. Tools down the left, paper, and the palette
+     standing in a rail down the right, so the paper keeps the full height.
+
+   data-compact marks screens too narrow for every tool on one line. */
+
+.desk:is([data-layout="drawer"], [data-layout="rail"]) {
+    display: grid;
+    /* Clear of the notch, the rounded corners and the home bar. */
+    --edge-t: max(8px, env(safe-area-inset-top));
+    --edge-r: max(8px, env(safe-area-inset-right));
+    --edge-b: max(8px, env(safe-area-inset-bottom));
+    --edge-l: max(8px, env(safe-area-inset-left));
+}
+
+.desk:is([data-layout="drawer"], [data-layout="rail"])
+    :is(.paper-room, .desk-bar, .tray) {
+    position: relative;
+    inset: auto;
+}
+
+.desk:is([data-layout="drawer"], [data-layout="rail"]) .paper-room {
+    grid-area: paper;
+    min-width: 0;
+    min-height: 0;
+    /* A little mat showing round the sheet. */
+    padding: 14px 12px;
+}
+
+.desk:is([data-layout="drawer"], [data-layout="rail"]) .desk-bar {
+    grid-area: bar;
+    align-items: center;
+}
+
+.desk:is([data-layout="drawer"], [data-layout="rail"]) .tray {
+    grid-area: tray;
+}
+
+/* Hidden to the eye but still read out: names and numbers the narrow
+   layouts have no room to show, and whose controls still need them. */
+.desk[data-compact] :is(.saved-label, .lid-toggle small),
+.desk[data-layout="drawer"][data-compact]
+    :is(.chip-meta, .chip-meter:last-child, .chip-meter .meter),
+.desk[data-layout="rail"] :is(.chip-meta, .meter-word) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ----- the bar ----- */
+
+/* Upright, the sheet runs nearly to the left of the screen and would cut
+   the left ruler's numbers in half, so that edge slides off-screen; the top
+   ruler stays. */
+.desk[data-layout="drawer"] {
+    --mat-x: calc(-1 * var(--mat-edge));
+}
+
+/* A phone shows a section from inside the mat: the ruled edge slides off
+   past the screen's corner, leaving the grid and the angle guides. */
+.desk[data-compact] {
+    --mat-x: calc(-1 * var(--mat-edge));
+    --mat-y: calc(-1 * var(--mat-edge));
+}
+
+.desk[data-compact] .bar-tools {
+    position: relative;
+    gap: 8px;
+    padding: 5px 8px;
+}
+
+.desk[data-compact] .bar-pill button {
+    padding: 0 14px;
+}
+
+/* The pile of saved drawings, laid flat beside its label. */
+.desk:is([data-layout="drawer"], [data-layout="rail"]) .saved-stack {
+    flex-direction: row;
+    gap: 10px;
+    padding: 6px 4px 4px 8px;
+}
+
+/* Under 860px the label won't fit beside the tools without wrapping the bar
+   to a second line, so the pile goes on its own (its name is still read). */
+@media (max-width: 859px) {
+    .desk[data-layout="drawer"] .saved-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+        border: 0;
+    }
+}
+
+.desk:is([data-layout="drawer"], [data-layout="rail"]) .saved-papers {
+    width: 48px;
+    height: 34px;
+}
+
+.desk:is([data-layout="drawer"], [data-layout="rail"]) .saved-papers::after {
+    top: -8px;
+    left: 5px;
+    width: 9px;
+    height: 20px;
+    border-width: 2px;
+}
+
+/* More: Clear, Save and Export, folded under one button. */
+.bar-more {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    min-width: 168px;
+    padding: 14px;
+    border: 3px solid var(--desk-ink);
+    border-radius: var(--blob);
+    background: var(--card);
+    box-shadow: var(--hard-shadow);
+}
+
+.bar-more[hidden] {
+    display: none;
+}
+
+.bar-more button[data-tone="yellow"] {
+    background: var(--craft-yellow);
+}
+
+.bar-more button[data-tone="blue"] {
+    background: var(--craft-blue);
+}
+
+.bar-more button[data-tone="green"] {
+    background: var(--craft-green);
+}
+
+.bar-more button[data-tone="pink"] {
+    background: var(--craft-pink);
+}
+
+/* ----- drawer: a screen held upright ----- */
+
+.desk[data-layout="drawer"] {
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    grid-template-areas: "bar" "paper" "tray";
+    padding: var(--edge-t) var(--edge-r) 0 var(--edge-l);
+}
+
+.desk[data-layout="drawer"] .tray {
+    margin-bottom: var(--edge-b);
+}
+
+/* Two fixed lines: the crayon in hand, then the box and the palette, which
+   sit nearest the thumb. They never wrap to a third. */
+.desk[data-layout="drawer"] .tray-strip {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas:
+        "hand hand"
+        "toggle palette";
+    align-items: center;
+    gap: 8px 14px;
+    min-height: 0;
+    padding: 10px 14px;
+}
+
+.desk[data-layout="drawer"] .in-hand {
+    grid-area: hand;
+}
+
+.desk[data-layout="drawer"] .lid-toggle {
+    grid-area: toggle;
+}
+
+/* The palette scrolls sideways where ten don't fit; the chip in hand is
+   kept in sight (Palette.tsx). The padding is room for the × and the ring,
+   which a scrolling row would otherwise clip; the margin takes it back. */
+.desk[data-layout="drawer"] .palette-row {
+    grid-area: palette;
+    min-width: 0;
+    margin: -14px -14px -10px -8px;
+    padding: 14px 14px 10px 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.desk[data-layout="drawer"] .palette-row::-webkit-scrollbar {
+    display: none;
+}
+
+.desk[data-layout="drawer"] .palette {
+    flex-wrap: nowrap;
+}
+
+/* The box opens above the strip, as far up as the bar. */
+.desk[data-layout="drawer"] .lid {
+    bottom: calc(100% + 10px);
+}
+
+.desk[data-layout="drawer"] .lid-panel {
+    max-height: calc(
+        100dvh - var(--strip-h) - var(--edge-t) - var(--edge-b) - 84px
+    );
+}
+
+/* On a phone the drawer runs edge to edge, and the box rises straight out
+   of it. */
+.desk[data-layout="drawer"][data-compact] .tray {
+    margin: 0 calc(-1 * var(--edge-r)) 0 calc(-1 * var(--edge-l));
+}
+
+.desk[data-layout="drawer"][data-compact] .tray-strip {
+    gap: 8px 10px;
+    padding: 10px max(12px, env(safe-area-inset-right)) var(--edge-b)
+        max(12px, env(safe-area-inset-left));
+    border-width: 3px 0 0;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 -2px 0 rgba(42, 33, 24, 0.15);
+}
+
+.desk[data-layout="drawer"][data-compact] .lid {
+    bottom: 100%;
+}
+
+/* A phone's box runs edge to edge, flush on the drawer, however few
+   crayons it has. */
+.desk[data-layout="drawer"][data-compact] .lid-panel {
+    width: 100%;
+    max-height: calc(100dvh - var(--strip-h) - var(--edge-t) - 72px);
+    padding: 12px 14px;
+    border-width: 3px 0 0;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 -4px 0 rgba(42, 33, 24, 0.18);
+}
+
+.desk[data-layout="drawer"][data-compact] .lid-toggle {
+    min-height: 44px;
+    padding: 4px 12px;
+}
+
+.desk[data-layout="drawer"][data-compact] .palette {
+    gap: 8px;
+}
+
+.desk[data-layout="drawer"][data-compact] .palette-chip {
+    width: 36px;
+    height: 36px;
+}
+
+/* The crayon in hand on one short line: the sharpener, the crayon (whose
+   length shows how much is left) and its name over the tip. */
+.desk[data-layout="drawer"][data-compact] .in-hand-strip {
+    height: 46px;
+    gap: 12px;
+}
+
+.desk[data-layout="drawer"][data-compact] .in-hand-strip .sharpener {
+    width: 52px;
+    height: 40px;
+}
+
+.desk[data-layout="drawer"][data-compact] .in-hand-strip .sharpener svg {
+    width: 34px;
+    height: 24px;
+}
+
+.desk[data-layout="drawer"][data-compact] .hand-chip {
+    min-width: 0;
+}
+
+.desk[data-layout="drawer"][data-compact] .hand-crayon {
+    width: 84px;
+    height: auto;
+}
+
+.desk[data-layout="drawer"][data-compact] .ghost-hand {
+    width: 72px;
+}
+
+.desk[data-layout="drawer"][data-compact] .chip-text {
+    min-width: 0;
+}
+
+.desk[data-layout="drawer"][data-compact] .chip-name {
+    overflow: hidden;
+    font-size: var(--font-size-sm);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* ----- the open box, off the desk ----- */
+
+/* The shelf, inside the box: the three boxes side by side. */
+.lid-shelf {
+    margin-bottom: 12px;
+}
+
+.lid-shelf .shelf-boxes {
+    flex-direction: row;
+    gap: 10px;
+}
+
+.lid-shelf .shelf-box {
+    flex: 1 1 0;
+    min-width: 0;
+    gap: 4px;
+    padding: 8px 6px 6px;
+    box-shadow: 3px 3px 0 var(--desk-ink);
+}
+
+.lid-shelf .shelf-portrait {
+    height: 56px;
+}
+
+.lid-shelf .shelf-box .box-art {
+    --art-unit: 0.42px;
+}
+
+.lid-shelf .shelf-name {
+    font-size: var(--font-size-sm);
+}
+
+.lid-shelf .shelf-count {
+    font-size: var(--font-size-xs);
+}
+
+/* Randomize and Reset on the left, Done on the right. */
+.lid-head .lid-done {
+    margin-left: auto;
+}
+
+/* ----- rail: a phone on its side ----- */
+
+.desk[data-layout="rail"] {
+    --rail-w: 136px;
+    grid-template-columns: auto minmax(0, 1fr) var(--rail-w);
+    grid-template-areas: "bar paper tray";
+    column-gap: 8px;
+    padding: var(--edge-t) var(--edge-r) var(--edge-b) var(--edge-l);
+}
+
+.desk[data-layout="rail"] .desk-bar {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.desk[data-layout="rail"] .bar-tools {
+    flex-direction: column;
+    padding: 8px 6px;
+}
+
+.desk[data-layout="rail"] .bar-pill button {
+    min-width: 72px;
+    padding: 0 10px;
+    font-size: var(--font-size-sm);
+}
+
+/* More opens beside the tools, over the paper. */
+.desk[data-layout="rail"] .bar-more {
+    top: 0;
+    left: calc(100% + 10px);
+}
+
+.desk[data-layout="rail"] .saved-stack {
+    flex-direction: column;
+    padding: 8px 4px 4px;
+}
+
+.desk[data-layout="rail"] .tray {
+    min-height: 0;
+}
+
+/* Top to bottom: the crayon in hand, the palette, the box. It scrolls on
+   the shortest phones rather than squeezing a target under 24px. */
+.desk[data-layout="rail"] .tray-strip {
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 0;
+    padding: 12px 8px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.desk[data-layout="rail"] .in-hand {
+    order: 0;
+}
+
+.desk[data-layout="rail"] .palette-row {
+    order: 1;
+    flex-direction: column;
+}
+
+.desk[data-layout="rail"] .lid-toggle {
+    order: 2;
+    flex: none;
+    align-items: center;
+    min-height: 44px;
+    padding: 4px 12px;
+    font-size: var(--font-size-sm);
+}
+
+.desk[data-layout="rail"] .palette {
+    display: grid;
+    grid-template-columns: repeat(3, 32px);
+    gap: 9px 8px;
+}
+
+.desk[data-layout="rail"] .palette-chip {
+    width: 32px;
+    height: 32px;
+}
+
+/* The crayon and the sharpener side by side, its name and two meters
+   under them. */
+.desk[data-layout="rail"] .in-hand-strip {
+    flex: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 6px 8px;
+}
+
+.desk[data-layout="rail"] .hand-chip {
+    display: contents;
+}
+
+.desk[data-layout="rail"] :is(.hand-crayon, .ghost-hand) {
+    order: 0;
+    width: 60px;
+    height: auto;
+}
+
+.desk[data-layout="rail"] .sharpener-slot {
+    order: 1;
+}
+
+.desk[data-layout="rail"] .in-hand-strip .sharpener {
+    width: 44px;
+    height: 36px;
+}
+
+.desk[data-layout="rail"] .in-hand-strip .sharpener svg {
+    width: 30px;
+    height: 22px;
+}
+
+.desk[data-layout="rail"] .chip-text {
+    order: 2;
+    flex: 1 0 100%;
+    min-width: 0;
+    align-items: center;
+}
+
+.desk[data-layout="rail"] .chip-name {
+    max-width: 100%;
+    overflow: hidden;
+    font-size: var(--font-size-sm);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.desk[data-layout="rail"] .chip-meters {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    width: 100%;
+}
+
+.desk[data-layout="rail"] .chip-meter .meter {
+    width: 100%;
+    height: 7px;
+}
+
+/* The box opens over the paper and the tools, up to the rail. */
+.desk[data-layout="rail"] .lid {
+    position: fixed;
+    top: var(--edge-t);
+    right: calc(var(--edge-r) + var(--rail-w) + 8px);
+    bottom: var(--edge-b);
+    left: var(--edge-l);
+    z-index: 6;
+    align-items: stretch;
+}
+
+.desk[data-layout="rail"] .lid-panel {
+    max-height: none;
+    padding: 12px 16px;
+}
+
+/* ----- the gallery on a phone ----- */
+
+@media (max-width: 599px) {
+    .gallery {
+        width: 100%;
+        max-width: none;
+        height: 100dvh;
+        max-height: none;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .gallery-inner {
+        padding: max(16px, env(safe-area-inset-top))
+            max(16px, env(safe-area-inset-right))
+            max(16px, env(safe-area-inset-bottom))
+            max(16px, env(safe-area-inset-left));
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px 10px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .desk * {
+        transition: none !important;
+    }
+}

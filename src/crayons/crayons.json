@@ -1,0 +1,4434 @@
+[
+    {
+        "name": "Red",
+        "year": 1903,
+        "crayon_color": "rgb(237, 10, 63)",
+        "crayon_hex": "#ED0A3F",
+        "crayon_notes": "",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "English Vermilion",
+        "year": 1903,
+        "crayon_color": "rgb(204, 71, 75)",
+        "crayon_hex": "#CC474B",
+        "crayon_notes": "Also spelled \"Vermillion.\" Discontinued by 1935",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Madder Lake",
+        "year": 1903,
+        "crayon_color": "rgb(204, 51, 54)",
+        "crayon_hex": "#CC3336",
+        "crayon_notes": "Discontinued by 1935",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Permanent Geranium Lake",
+        "year": 1903,
+        "crayon_color": "rgb(225, 44, 44)",
+        "crayon_hex": "#E12C2C",
+        "crayon_notes": "Discontinued by 1910.",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Indian Red",
+        "year": 1903,
+        "crayon_color": "rgb(205, 92, 92)",
+        "crayon_hex": "#CD5C5C",
+        "crayon_notes": "Same color as \"Chestnut\" (1999–present).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Dark Venetian Red",
+        "year": 1903,
+        "crayon_color": "rgb(179, 59, 36)",
+        "crayon_hex": "#B33B24",
+        "crayon_notes": "\"Venetian Red, Dark\" on labels. Discontinued by 1910.",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Venetian Red",
+        "year": 1903,
+        "crayon_color": "rgb(200, 8, 21)",
+        "crayon_hex": "#C80815",
+        "crayon_notes": "Discontinued by 1949",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Light Venetian Red",
+        "year": 1903,
+        "crayon_color": "rgb(230, 115, 92)",
+        "crayon_hex": "#E6735C",
+        "crayon_notes": "\"Venetian Red, Light\" on labels. Discontinued by 1910.",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Orange",
+        "year": 1903,
+        "crayon_color": "rgb(255, 136, 51)",
+        "crayon_hex": "#FF8833",
+        "crayon_notes": "",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Gold Ochre",
+        "year": 1903,
+        "crayon_color": "rgb(242, 198, 73)",
+        "crayon_hex": "#F2C649",
+        "crayon_notes": "\"Golden Ochre\" on some labels. Same color as \"Maize\" (1958–1990).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Medium Chrome Yellow",
+        "year": 1903,
+        "crayon_color": "rgb(252, 214, 103)",
+        "crayon_hex": "#FCD667",
+        "crayon_notes": "Same color as \"Medium Yellow\" (1903–1958) and \"Goldenrod\" (1958–present).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Yellow",
+        "year": 1903,
+        "crayon_color": "rgb(255, 255, 0)",
+        "crayon_hex": "#FFFF00",
+        "crayon_notes": "",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Olive Green",
+        "year": 1903,
+        "crayon_color": "rgb(181, 179, 92)",
+        "crayon_hex": "#B5B35C",
+        "crayon_notes": "",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Light Chrome Yellow",
+        "year": 1903,
+        "crayon_color": "rgb(255, 255, 159)",
+        "crayon_hex": "#FFFF9F",
+        "crayon_notes": "On labels \"Chrome Yellow, Light.\" Same color as \"Light Yellow\" (1903–1958) and \"Lemon Yellow\" (1903–1910, 1958–1990).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Light Chrome Green",
+        "year": 1903,
+        "crayon_color": "rgb(190, 230, 75)",
+        "crayon_hex": "#BEE64B",
+        "crayon_notes": "\"Chrome Green, Light\" on labels. Same color as \"Light Green\" (1903–1935).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Green",
+        "year": 1903,
+        "crayon_color": "rgb(0, 128, 1)",
+        "crayon_hex": "#008001",
+        "crayon_notes": "",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Medium Chrome Green",
+        "year": 1903,
+        "crayon_color": "rgb(108, 166, 124)",
+        "crayon_hex": "#6CA67C",
+        "crayon_notes": "\"Chrome Green, Medium\" on labels. Same color as \"Medium Green\" (1903–1939).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Dark Chrome Green",
+        "year": 1903,
+        "crayon_color": "rgb(1, 120, 111)",
+        "crayon_hex": "#01786F",
+        "crayon_notes": "\"Chrome Green, Dark\" on labels. Same color as \"Dark Green\" (1903–1949) and \"Pine Green\" (1958–present).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Blue",
+        "year": 1903,
+        "crayon_color": "rgb(46, 180, 230)",
+        "crayon_hex": "#2EB4E6",
+        "crayon_notes": "Same color as \"Celestial Blue\" (1930–1949) and \"Azure Blue\" (1949–1958).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Prussian Blue",
+        "year": 1903,
+        "crayon_color": "rgb(0, 70, 140)",
+        "crayon_hex": "#00468C",
+        "crayon_notes": "Same color as \"Midnight Blue\" (1958–present).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Cobalt Blue",
+        "year": 1903,
+        "crayon_color": "rgb(0, 71, 171)",
+        "crayon_hex": "#0047AB",
+        "crayon_notes": "Discontinued by 1958",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Celestial Blue",
+        "year": 1903,
+        "crayon_color": "rgb(73, 151, 208)",
+        "crayon_hex": "#4997D0",
+        "crayon_notes": "Discontinued by 1944",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Ultramarine Blue",
+        "year": 1903,
+        "crayon_color": "rgb(65, 102, 245)",
+        "crayon_hex": "#4166F5",
+        "crayon_notes": "Discontinued by 1958",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Purple (Violet)",
+        "year": 1903,
+        "crayon_color": "rgb(106, 13, 173)",
+        "crayon_hex": "#6A0DAD",
+        "crayon_notes": "\"Violet\" from about 1914.",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Permanent Magenta",
+        "year": 1903,
+        "crayon_color": "rgb(246, 83, 166)",
+        "crayon_hex": "#F653A6",
+        "crayon_notes": "Same color as \"Magenta\" (1903–present).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Rose Pink",
+        "year": 1903,
+        "crayon_color": "rgb(255, 102, 204)",
+        "crayon_hex": "#FF66CC",
+        "crayon_notes": "Same color as \"Pink\" (1903–1917) and \"Carnation Pink\" (1958–present).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Burnt Sienna",
+        "year": 1903,
+        "crayon_color": "rgb(233, 116, 81)",
+        "crayon_hex": "#E97451",
+        "crayon_notes": "",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Van Dyke Brown",
+        "year": 1903,
+        "crayon_color": "rgb(102, 66, 40)",
+        "crayon_hex": "#664228",
+        "crayon_notes": "Same color as \"Brown\" (1903–1935).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Flesh Tint",
+        "year": 1903,
+        "crayon_color": "rgb(255, 203, 164)",
+        "crayon_hex": "#FFCBA4",
+        "crayon_notes": "Same color as \"Flesh\" (1949–1956, 1958–1962), \"Pink Beige\" (1956–1958), and \"Peach\" (1962–present).",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Burnt Umber",
+        "year": 1903,
+        "crayon_color": "rgb(138, 51, 36)",
+        "crayon_hex": "#8A3324",
+        "crayon_notes": "Discontinued by 1949",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Raw Umber",
+        "year": 1903,
+        "crayon_color": "rgb(130, 102, 68)",
+        "crayon_hex": "#826644",
+        "crayon_notes": "One of the 8 colors \"Retired\" in 1990",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Raw Sienna",
+        "year": 1903,
+        "crayon_color": "rgb(214, 138, 89)",
+        "crayon_hex": "#D68A59",
+        "crayon_notes": "Discontinued by 1910.",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Gold",
+        "year": 1903,
+        "crayon_color": "rgb(165, 124, 0)",
+        "crayon_hex": "#A57C00",
+        "crayon_notes": "Metallic; swatch represents nominal hue only. Available only in bulk after 1915.",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Silver",
+        "year": 1903,
+        "crayon_color": "rgb(170, 169, 173)",
+        "crayon_hex": "#AAA9AD",
+        "crayon_notes": "Metallic; swatch represents nominal hue only. Available only in bulk after 1915.",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Copper",
+        "year": 1903,
+        "crayon_color": "rgb(184, 115, 51)",
+        "crayon_hex": "#B87333",
+        "crayon_notes": "Metallic; swatch represents nominal hue only. Not Available between 1915 and 1950",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Black",
+        "year": 1903,
+        "crayon_color": "rgb(0, 0, 0)",
+        "crayon_hex": "#000000",
+        "crayon_notes": "",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Charcoal Gray",
+        "year": 1903,
+        "crayon_color": "rgb(115, 106, 98)",
+        "crayon_hex": "#736A62",
+        "crayon_notes": "Discontinued in 1910.",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "White",
+        "year": 1903,
+        "crayon_color": "rgb(255, 255, 255)",
+        "crayon_hex": "#FFFFFF",
+        "crayon_notes": "",
+        "section": "1903: the original Crayola colors"
+    },
+    {
+        "name": "Maximum Red",
+        "year": 1926,
+        "crayon_color": "rgb(217, 33, 33)",
+        "crayon_hex": "#D92121",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Middle Red",
+        "year": 1926,
+        "crayon_color": "rgb(229, 142, 115)",
+        "crayon_hex": "#E58E73",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Middle Yellow Red",
+        "year": 1926,
+        "crayon_color": "rgb(236, 177, 118)",
+        "crayon_hex": "#ECB176",
+        "crayon_notes": "Same color as \"Medium Orange\" (1949–1958).",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Maximum Yellow Red",
+        "year": 1926,
+        "crayon_color": "rgb(242, 186, 73)",
+        "crayon_hex": "#F2BA49",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Middle Yellow",
+        "year": 1926,
+        "crayon_color": "rgb(255, 235, 0)",
+        "crayon_hex": "#FFEB00",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Maximum Yellow",
+        "year": 1926,
+        "crayon_color": "rgb(250, 250, 55)",
+        "crayon_hex": "#FAFA37",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Maximum Green Yellow",
+        "year": 1926,
+        "crayon_color": "rgb(217, 230, 80)",
+        "crayon_hex": "#D9E650",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Middle Green Yellow",
+        "year": 1926,
+        "crayon_color": "rgb(172, 191, 96)",
+        "crayon_hex": "#ACBF60",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Maximum Green",
+        "year": 1926,
+        "crayon_color": "rgb(94, 140, 49)",
+        "crayon_hex": "#5E8C31",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Middle Green",
+        "year": 1926,
+        "crayon_color": "rgb(77, 140, 87)",
+        "crayon_hex": "#4D8C57",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Middle Blue Green",
+        "year": 1926,
+        "crayon_color": "rgb(141, 217, 204)",
+        "crayon_hex": "#8DD9CC",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Maximum Blue Green",
+        "year": 1926,
+        "crayon_color": "rgb(48, 191, 191)",
+        "crayon_hex": "#30BFBF",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Middle Blue",
+        "year": 1926,
+        "crayon_color": "rgb(126, 212, 230)",
+        "crayon_hex": "#7ED4E6",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Maximum Blue",
+        "year": 1926,
+        "crayon_color": "rgb(71, 171, 204)",
+        "crayon_hex": "#47ABCC",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Maximum Blue Purple",
+        "year": 1926,
+        "crayon_color": "rgb(172, 172, 230)",
+        "crayon_hex": "#ACACE6",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Middle Blue Purple",
+        "year": 1926,
+        "crayon_color": "rgb(139, 114, 190)",
+        "crayon_hex": "#8B72BE",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Maximum Purple",
+        "year": 1926,
+        "crayon_color": "rgb(115, 51, 128)",
+        "crayon_hex": "#733380",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Middle Purple",
+        "year": 1926,
+        "crayon_color": "rgb(217, 130, 181)",
+        "crayon_hex": "#D982B5",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Maximum Red Purple",
+        "year": 1926,
+        "crayon_color": "rgb(166, 58, 121)",
+        "crayon_hex": "#A63A79",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Middle Red Purple",
+        "year": 1926,
+        "crayon_color": "rgb(165, 83, 83)",
+        "crayon_hex": "#A55353",
+        "crayon_notes": "",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Middle Grey",
+        "year": 1926,
+        "crayon_color": "rgb(139, 134, 128)",
+        "crayon_hex": "#8B8680",
+        "crayon_notes": "Spelled \"Grey\" on labels, but \"Gray\" on boxes. Same color as \"Neutral Grey\" (1930–1956), \"Gray\" (1956–present).",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Black",
+        "year": 1926,
+        "crayon_color": "rgb(0, 0, 0)",
+        "crayon_hex": "#000000",
+        "crayon_notes": "References to \"Maximum Black\" are erroneous.",
+        "section": "Munsell Crayola, 1926–1944"
+    },
+    {
+        "name": "Red",
+        "year": 1949,
+        "crayon_color": "rgb(237, 10, 63)",
+        "crayon_hex": "#ED0A3F",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Dark Red",
+        "year": 1949,
+        "crayon_color": "rgb(139, 0, 0)",
+        "crayon_hex": "#8B0000",
+        "crayon_notes": "Same color as \"Maroon\" (1958–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Indian Red",
+        "year": 1949,
+        "crayon_color": "rgb(205, 92, 92)",
+        "crayon_hex": "#CD5C5C",
+        "crayon_notes": "Same color as \"Chestnut\" (1999–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Red-Orange",
+        "year": 1949,
+        "crayon_color": "rgb(255, 63, 52)",
+        "crayon_hex": "#FF3F34",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Orange",
+        "year": 1949,
+        "crayon_color": "rgb(255, 136, 51)",
+        "crayon_hex": "#FF8833",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Medium Orange",
+        "year": 1949,
+        "crayon_color": "rgb(236, 177, 118)",
+        "crayon_hex": "#ECB176",
+        "crayon_notes": "Same color as \"Middle Yellow Red\" (1926–1949).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Yellow-Orange",
+        "year": 1949,
+        "crayon_color": "rgb(255, 174, 66)",
+        "crayon_hex": "#FFAE42",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Gold Ochre",
+        "year": 1949,
+        "crayon_color": "rgb(242, 198, 73)",
+        "crayon_hex": "#F2C649",
+        "crayon_notes": "Same color as \"Maize\" (1958–1990).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Medium Yellow",
+        "year": 1949,
+        "crayon_color": "rgb(252, 214, 103)",
+        "crayon_hex": "#FCD667",
+        "crayon_notes": "Same color as \"Medium Chrome Yellow\" (1903–1910) and \"Goldenrod\" (1958–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Yellow",
+        "year": 1949,
+        "crayon_color": "rgb(255, 255, 0)",
+        "crayon_hex": "#FFFF00",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Olive Green",
+        "year": 1949,
+        "crayon_color": "rgb(181, 179, 92)",
+        "crayon_hex": "#B5B35C",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Light Yellow",
+        "year": 1949,
+        "crayon_color": "rgb(255, 255, 224)",
+        "crayon_hex": "#FFFFE0",
+        "crayon_notes": "Same color as \"Lemon Yellow\" (1903–1910, 1958–1990).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Yellow-Green",
+        "year": 1949,
+        "crayon_color": "rgb(154, 205, 50)",
+        "crayon_hex": "#9ACD32",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Dark Green",
+        "year": 1949,
+        "crayon_color": "rgb(1, 50, 32)",
+        "crayon_hex": "#013220",
+        "crayon_notes": "Same color as \"Forest Green\" (1958–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Light Green",
+        "year": 1949,
+        "crayon_color": "rgb(144, 238, 144)",
+        "crayon_hex": "#90EE90",
+        "crayon_notes": "Same color as \"Sea Green\" (1958–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Green",
+        "year": 1949,
+        "crayon_color": "rgb(1, 163, 104)",
+        "crayon_hex": "#01A368",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Light Turquoise Blue",
+        "year": 1949,
+        "crayon_color": "rgb(69, 139, 116)",
+        "crayon_hex": "#458B74",
+        "crayon_notes": "Same color as \"Aquamarine\" (1958–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Turquoise Blue",
+        "year": 1949,
+        "crayon_color": "rgb(0, 255, 239)",
+        "crayon_hex": "#00FFEF",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Middle Blue-Green",
+        "year": 1949,
+        "crayon_color": "rgb(0, 149, 183)",
+        "crayon_hex": "#0095B7",
+        "crayon_notes": "Same color as \"Blue-Green\" (1958–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Blue-Green",
+        "year": 1949,
+        "crayon_color": "rgb(13, 152, 186)",
+        "crayon_hex": "#0D98BA",
+        "crayon_notes": "Same color as \"Maximum Blue\" (1926–1949)",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Azure Blue",
+        "year": 1949,
+        "crayon_color": "rgb(73, 151, 208)",
+        "crayon_hex": "#4997D0",
+        "crayon_notes": "Same color as \"Blue\" (1903–1935) and \"Celestial Blue\" (1930–1949).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Cerulean Blue",
+        "year": 1949,
+        "crayon_color": "rgb(42, 82, 190)",
+        "crayon_hex": "#2A52BE",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Prussian Blue",
+        "year": 1949,
+        "crayon_color": "rgb(0, 49, 83)",
+        "crayon_hex": "#003153",
+        "crayon_notes": "Same color as \"Midnight Blue\" (1958–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Blue",
+        "year": 1949,
+        "crayon_color": "rgb(0, 102, 255)",
+        "crayon_hex": "#0066FF",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Medium Blue",
+        "year": 1949,
+        "crayon_color": "rgb(0, 0, 205)",
+        "crayon_hex": "#0000CD",
+        "crayon_notes": "Same color as \"Blue\" (1935–1949).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Cobalt Blue",
+        "year": 1949,
+        "crayon_color": "rgb(0, 71, 171)",
+        "crayon_hex": "#0047AB",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Blue-Violet",
+        "year": 1949,
+        "crayon_color": "rgb(138, 43, 226)",
+        "crayon_hex": "#8A2BE2",
+        "crayon_notes": "Same color as \"Violet-Blue\" (1958–1990).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Violet",
+        "year": 1949,
+        "crayon_color": "rgb(127, 0, 255)",
+        "crayon_hex": "#7F00FF",
+        "crayon_notes": "Same color as \"Blue-Violet\" (1958–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Medium Violet",
+        "year": 1949,
+        "crayon_color": "rgb(101, 49, 95)",
+        "crayon_hex": "#65315F",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Lavender",
+        "year": 1949,
+        "crayon_color": "rgb(181, 126, 220)",
+        "crayon_hex": "#B57EDC",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Brilliant Rose",
+        "year": 1949,
+        "crayon_color": "rgb(230, 103, 206)",
+        "crayon_hex": "#E667CE",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Medium Red-Violet",
+        "year": 1949,
+        "crayon_color": "rgb(187, 51, 133)",
+        "crayon_hex": "#BB3385",
+        "crayon_notes": "Same color as \"Orchid\" (1958–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Medium Rose",
+        "year": 1949,
+        "crayon_color": "rgb(217, 108, 190)",
+        "crayon_hex": "#D96CBE",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Light Magenta",
+        "year": 1949,
+        "crayon_color": "rgb(255, 128, 255)",
+        "crayon_hex": "#FF80FF",
+        "crayon_notes": "Same color as \"Thistle\" (1958–1999).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Red-Violet",
+        "year": 1949,
+        "crayon_color": "rgb(199, 21, 133)",
+        "crayon_hex": "#C71585",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Magenta",
+        "year": 1949,
+        "crayon_color": "rgb(255, 0, 255)",
+        "crayon_hex": "#FF00FF",
+        "crayon_notes": "Same color as \"Permanent Magenta\" (1903–1914).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Rose Pink",
+        "year": 1949,
+        "crayon_color": "rgb(255, 102, 204)",
+        "crayon_hex": "#FF66CC",
+        "crayon_notes": "Same color as \"Carnation Pink\" (1958–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Carmine Red",
+        "year": 1949,
+        "crayon_color": "rgb(255, 0, 56)",
+        "crayon_hex": "#FF0038",
+        "crayon_notes": "Same color as \"Carmine\" (1935–1949).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Salmon",
+        "year": 1949,
+        "crayon_color": "rgb(250, 128, 114)",
+        "crayon_hex": "#FA8072",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Mahogany",
+        "year": 1949,
+        "crayon_color": "rgb(192, 64, 0)",
+        "crayon_hex": "#C04000",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Burnt Sienna",
+        "year": 1949,
+        "crayon_color": "rgb(233, 116, 81)",
+        "crayon_hex": "#E97451",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Brown",
+        "year": 1949,
+        "crayon_color": "rgb(150, 75, 0)",
+        "crayon_hex": "#964B00",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Flesh",
+        "year": 1949,
+        "crayon_color": "rgb(255, 203, 164)",
+        "crayon_hex": "#FFCBA4",
+        "crayon_notes": "Same color as \"Flesh Tint\" (1903–1949), \"Pink Beige\" (1956–1958), and Peach (1962–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Raw Umber",
+        "year": 1949,
+        "crayon_color": "rgb(130, 102, 68)",
+        "crayon_hex": "#826644",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Silver",
+        "year": 1949,
+        "crayon_color": "rgb(170, 169, 173)",
+        "crayon_hex": "#AAA9AD",
+        "crayon_notes": "Metallic; swatch represents nominal hue only.",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Black",
+        "year": 1949,
+        "crayon_color": "rgb(0, 0, 0)",
+        "crayon_hex": "#000000",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Neutral Gray",
+        "year": 1949,
+        "crayon_color": "rgb(139, 134, 128)",
+        "crayon_hex": "#8B8680",
+        "crayon_notes": "Same color as \"Middle Grey\" (1926–1949), \"Gray\" (1956–present).",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "White",
+        "year": 1949,
+        "crayon_color": "rgb(255, 255, 255)",
+        "crayon_hex": "#FFFFFF",
+        "crayon_notes": "",
+        "section": "Changes through 1949"
+    },
+    {
+        "name": "Red",
+        "year": 1958,
+        "crayon_color": "rgb(237, 10, 63)",
+        "crayon_hex": "#ED0A3F",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Maroon",
+        "year": 1958,
+        "crayon_color": "rgb(195, 33, 72)",
+        "crayon_hex": "#C32148",
+        "crayon_notes": "Same color as \"Dark Red\" (1949–1957).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Brick Red",
+        "year": 1958,
+        "crayon_color": "rgb(203, 65, 84)",
+        "crayon_hex": "#CB4154",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Indian Red",
+        "year": 1958,
+        "crayon_color": "rgb(205, 92, 92)",
+        "crayon_hex": "#CD5C5C",
+        "crayon_notes": "Same color as \"Chestnut\" (1999–present).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Orange-Red",
+        "year": 1958,
+        "crayon_color": "rgb(255, 83, 73)",
+        "crayon_hex": "#FF5349",
+        "crayon_notes": "One of eight colors \"retired\" in 1990.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Bittersweet",
+        "year": 1958,
+        "crayon_color": "rgb(254, 111, 94)",
+        "crayon_hex": "#FE6F5E",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Burnt Orange",
+        "year": 1958,
+        "crayon_color": "rgb(204, 85, 0)",
+        "crayon_hex": "#CC5500",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Red-Orange",
+        "year": 1958,
+        "crayon_color": "rgb(255, 63, 52)",
+        "crayon_hex": "#FF3F34",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Orange",
+        "year": 1958,
+        "crayon_color": "rgb(255, 136, 51)",
+        "crayon_hex": "#FF8833",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Yellow-Orange",
+        "year": 1958,
+        "crayon_color": "rgb(255, 174, 66)",
+        "crayon_hex": "#FFAE42",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Maize",
+        "year": 1958,
+        "crayon_color": "rgb(242, 198, 73)",
+        "crayon_hex": "#F2C649",
+        "crayon_notes": "Same color as \"Gold Ochre\" (1903–1957). One of eight colors \"retired\" in 1990.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Orange-Yellow",
+        "year": 1958,
+        "crayon_color": "rgb(245, 189, 31)",
+        "crayon_hex": "#F5BD1F",
+        "crayon_notes": "One of eight colors \"retired\" in 1990.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Goldenrod",
+        "year": 1958,
+        "crayon_color": "rgb(218, 165, 32)",
+        "crayon_hex": "#DAA520",
+        "crayon_notes": "Same color as \"Medium Chrome Yellow\" (1903–1910) and \"Medium Yellow\" (1903–1957).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Yellow",
+        "year": 1958,
+        "crayon_color": "rgb(255, 255, 0)",
+        "crayon_hex": "#FFFF00",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Green-Yellow",
+        "year": 1958,
+        "crayon_color": "rgb(241, 231, 136)",
+        "crayon_hex": "#F1E788",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Spring Green",
+        "year": 1958,
+        "crayon_color": "rgb(236, 235, 189)",
+        "crayon_hex": "#ECEBBD",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Olive Green",
+        "year": 1958,
+        "crayon_color": "rgb(181, 179, 92)",
+        "crayon_hex": "#B5B35C",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Lemon Yellow",
+        "year": 1958,
+        "crayon_color": "rgb(255, 244, 79)",
+        "crayon_hex": "#FFF44F",
+        "crayon_notes": "Same color as \"Light Yellow\" (1903–1958). One of eight colors \"retired\" in 1990.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Yellow-Green",
+        "year": 1958,
+        "crayon_color": "rgb(154, 205, 50)",
+        "crayon_hex": "#9ACD32",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Forest Green",
+        "year": 1958,
+        "crayon_color": "rgb(34, 139, 34)",
+        "crayon_hex": "#228B22",
+        "crayon_notes": "Same color as \"Dark Green\" (1949–1957).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Sea Green",
+        "year": 1958,
+        "crayon_color": "rgb(46, 139, 87)",
+        "crayon_hex": "#2E8B57",
+        "crayon_notes": "Same color as \"Light Green\" (1949–1957).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Green",
+        "year": 1958,
+        "crayon_color": "rgb(0, 128, 1)",
+        "crayon_hex": "#008001",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Pine Green",
+        "year": 1958,
+        "crayon_color": "rgb(1, 121, 111)",
+        "crayon_hex": "#01796F",
+        "crayon_notes": "Same color as \"Dark Chrome Green\" (1903–1910) and \"Dark Green\" (1903–1949).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Light Blue",
+        "year": 1958,
+        "crayon_color": "rgb(173, 216, 230)",
+        "crayon_hex": "#ADD8E6",
+        "crayon_notes": "Discontinued in 1958; replaced by Turquoise Blue.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Aquamarine",
+        "year": 1958,
+        "crayon_color": "rgb(69, 139, 116)",
+        "crayon_hex": "#458B74",
+        "crayon_notes": "Same color as \"Light Turquoise Blue\" (1949–1957).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Sky Blue",
+        "year": 1958,
+        "crayon_color": "rgb(118, 215, 234)",
+        "crayon_hex": "#76D7EA",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Blue-Green",
+        "year": 1958,
+        "crayon_color": "rgb(0, 149, 183)",
+        "crayon_hex": "#0095B7",
+        "crayon_notes": "Same color as \"Middle Blue Green\" (1949–1957).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Cornflower",
+        "year": 1958,
+        "crayon_color": "rgb(147, 204, 234)",
+        "crayon_hex": "#93CCEA",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Green-Blue",
+        "year": 1958,
+        "crayon_color": "rgb(40, 135, 200)",
+        "crayon_hex": "#2887C8",
+        "crayon_notes": "One of eight colors \"retired\" in 1990.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Navy Blue",
+        "year": 1958,
+        "crayon_color": "rgb(0, 102, 204)",
+        "crayon_hex": "#0066CC",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Midnight Blue",
+        "year": 1958,
+        "crayon_color": "rgb(0, 70, 140)",
+        "crayon_hex": "#00468C",
+        "crayon_notes": "Same color as \"Prussian Blue\" (1903–1957).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Blue",
+        "year": 1958,
+        "crayon_color": "rgb(0, 102, 255)",
+        "crayon_hex": "#0066FF",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Cadet Blue",
+        "year": 1958,
+        "crayon_color": "rgb(169, 178, 195)",
+        "crayon_hex": "#A9B2C3",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Periwinkle",
+        "year": 1958,
+        "crayon_color": "rgb(195, 205, 230)",
+        "crayon_hex": "#C3CDE6",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Violet-Blue",
+        "year": 1958,
+        "crayon_color": "rgb(118, 110, 200)",
+        "crayon_hex": "#766EC8",
+        "crayon_notes": "Same color as Blue-Violet (1930–1958). One of eight colors \"retired\" in 1990.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Blue-Violet",
+        "year": 1958,
+        "crayon_color": "rgb(100, 86, 183)",
+        "crayon_hex": "#6456B7",
+        "crayon_notes": "Same color as \"Violet\" (1949–1957).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Violet",
+        "year": 1958,
+        "crayon_color": "rgb(131, 89, 163)",
+        "crayon_hex": "#8359A3",
+        "crayon_notes": "On labels \"Violet (Purple)\".",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Brilliant Rose",
+        "year": 1958,
+        "crayon_color": "rgb(230, 103, 206)",
+        "crayon_hex": "#E667CE",
+        "crayon_notes": "Discontinued in 1958; replaced by Magenta.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Plum",
+        "year": 1958,
+        "crayon_color": "rgb(132, 49, 121)",
+        "crayon_hex": "#843179",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Orchid",
+        "year": 1958,
+        "crayon_color": "rgb(226, 156, 210)",
+        "crayon_hex": "#E29CD2",
+        "crayon_notes": "Same color as \"Medium Red-Violet\" (1949–1958).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Thistle",
+        "year": 1958,
+        "crayon_color": "rgb(235, 176, 215)",
+        "crayon_hex": "#EBB0D7",
+        "crayon_notes": "Same color as \"Light Magenta\" (1949–1958). \"Retired\" in 1999.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Mulberry",
+        "year": 1958,
+        "crayon_color": "rgb(200, 80, 155)",
+        "crayon_hex": "#C8509B",
+        "crayon_notes": "\"Retired\" in 2003.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Red-Violet",
+        "year": 1958,
+        "crayon_color": "rgb(187, 51, 133)",
+        "crayon_hex": "#BB3385",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Lavender",
+        "year": 1958,
+        "crayon_color": "rgb(251, 174, 210)",
+        "crayon_hex": "#FBAED2",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Carnation Pink",
+        "year": 1958,
+        "crayon_color": "rgb(255, 166, 201)",
+        "crayon_hex": "#FFA6C9",
+        "crayon_notes": "Same color as \"Rose Pink\" (1903–1957).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Violet-Red",
+        "year": 1958,
+        "crayon_color": "rgb(247, 70, 138)",
+        "crayon_hex": "#F7468A",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Salmon",
+        "year": 1958,
+        "crayon_color": "rgb(255, 145, 164)",
+        "crayon_hex": "#FF91A4",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Mahogany",
+        "year": 1958,
+        "crayon_color": "rgb(202, 52, 53)",
+        "crayon_hex": "#CA3435",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Melon",
+        "year": 1958,
+        "crayon_color": "rgb(254, 186, 173)",
+        "crayon_hex": "#FEBAAD",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Burnt Sienna",
+        "year": 1958,
+        "crayon_color": "rgb(233, 116, 81)",
+        "crayon_hex": "#E97451",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Brown",
+        "year": 1958,
+        "crayon_color": "rgb(175, 89, 62)",
+        "crayon_hex": "#AF593E",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Sepia",
+        "year": 1958,
+        "crayon_color": "rgb(158, 91, 64)",
+        "crayon_hex": "#9E5B40",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Raw Sienna",
+        "year": 1958,
+        "crayon_color": "rgb(210, 125, 70)",
+        "crayon_hex": "#D27D46",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Tan",
+        "year": 1958,
+        "crayon_color": "rgb(217, 154, 108)",
+        "crayon_hex": "#D99A6C",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Peach",
+        "year": 1958,
+        "crayon_color": "rgb(255, 203, 164)",
+        "crayon_hex": "#FFCBA4",
+        "crayon_notes": "Same color as \"Flesh Tint\" (1903–1949), \"Flesh\" (1949–1956, 1958–1962), and \"Pink Beige\" (1956–1957).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Apricot",
+        "year": 1958,
+        "crayon_color": "rgb(253, 213, 177)",
+        "crayon_hex": "#FDD5B1",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Raw Umber",
+        "year": 1958,
+        "crayon_color": "rgb(130, 102, 68)",
+        "crayon_hex": "#826644",
+        "crayon_notes": "One of eight colors \"retired\" in 1990.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Gold",
+        "year": 1958,
+        "crayon_color": "rgb(165, 124, 0)",
+        "crayon_hex": "#A57C00",
+        "crayon_notes": "Metallic; swatch represents nominal hue only.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Silver",
+        "year": 1958,
+        "crayon_color": "rgb(170, 169, 173)",
+        "crayon_hex": "#AAA9AD",
+        "crayon_notes": "Metallic; swatch represents nominal hue only.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Copper",
+        "year": 1958,
+        "crayon_color": "rgb(184, 115, 51)",
+        "crayon_hex": "#B87333",
+        "crayon_notes": "Metallic; swatch represents nominal hue only.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Black",
+        "year": 1958,
+        "crayon_color": "rgb(0, 0, 0)",
+        "crayon_hex": "#000000",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Gray",
+        "year": 1958,
+        "crayon_color": "rgb(139, 134, 128)",
+        "crayon_hex": "#8B8680",
+        "crayon_notes": "Same color as \"Neutral Gray\" (1926–1956).",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Blue-Gray",
+        "year": 1958,
+        "crayon_color": "rgb(102, 153, 204)",
+        "crayon_hex": "#6699CC",
+        "crayon_notes": "One of eight colors \"retired\" in 1990.",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "White",
+        "year": 1958,
+        "crayon_color": "rgb(255, 255, 255)",
+        "crayon_hex": "#FFFFFF",
+        "crayon_notes": "",
+        "section": "Crayola No. 64"
+    },
+    {
+        "name": "Wild Watermelon",
+        "year": 1958,
+        "crayon_color": "rgb(253, 91, 120)",
+        "crayon_hex": "#FD5B78",
+        "crayon_notes": "Same color as \"Ultra Red\" (1972–1990).",
+        "section": "Changes 1958–1990"
+    },
+    {
+        "name": "Outrageous Orange",
+        "year": 1958,
+        "crayon_color": "rgb(255, 96, 55)",
+        "crayon_hex": "#FF6037",
+        "crayon_notes": "Same color as \"Ultra Orange\" (1972–1990).",
+        "section": "Changes 1958–1990"
+    },
+    {
+        "name": "Atomic Tangerine",
+        "year": 1958,
+        "crayon_color": "rgb(255, 153, 102)",
+        "crayon_hex": "#FF9966",
+        "crayon_notes": "Same color as \"Ultra Yellow\" (1972–1990).",
+        "section": "Changes 1958–1990"
+    },
+    {
+        "name": "Laser Lemon",
+        "year": 1958,
+        "crayon_color": "rgb(230, 255, 102)",
+        "crayon_hex": "#E6FF66",
+        "crayon_notes": "Same color as \"Chartreuse\" (1972–1990).",
+        "section": "Changes 1958–1990"
+    },
+    {
+        "name": "Screamin' Green",
+        "year": 1958,
+        "crayon_color": "rgb(102, 255, 102)",
+        "crayon_hex": "#66FF66",
+        "crayon_notes": "Same color as \"Ultra Green\" (1972–1990).",
+        "section": "Changes 1958–1990"
+    },
+    {
+        "name": "Blizzard Blue",
+        "year": 1958,
+        "crayon_color": "rgb(100, 202, 224)",
+        "crayon_hex": "#64CAE0",
+        "crayon_notes": "Same color as \"Ultra Blue\" (1972–1990). \"Retired\" in 2003.",
+        "section": "Changes 1958–1990"
+    },
+    {
+        "name": "Shocking Pink",
+        "year": 1958,
+        "crayon_color": "rgb(255, 110, 255)",
+        "crayon_hex": "#FF6EFF",
+        "crayon_notes": "Same color as \"Ultra Pink\" (1972–1990).",
+        "section": "Changes 1958–1990"
+    },
+    {
+        "name": "Razzle Dazzle Rose",
+        "year": 1958,
+        "crayon_color": "rgb(238, 52, 210)",
+        "crayon_hex": "#EE34D2",
+        "crayon_notes": "Same color as \"Hot Magenta\" (1972–1990).",
+        "section": "Changes 1958–1990"
+    },
+    {
+        "name": "Radical Red",
+        "year": 1990,
+        "crayon_color": "rgb(255, 53, 94)",
+        "crayon_hex": "#FF355E",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Scarlet",
+        "year": 1998,
+        "crayon_color": "rgb(253, 14, 53)",
+        "crayon_hex": "#FD0E35",
+        "crayon_notes": "Introduced in 1998. Same color as \"Torch Red\" (1998).",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Mango Tango",
+        "year": 2003,
+        "crayon_color": "rgb(255, 59, 41)",
+        "crayon_hex": "#FF3B29",
+        "crayon_notes": "Introduced in 2003.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Sunset Orange",
+        "year": 1997,
+        "crayon_color": "rgb(254, 76, 64)",
+        "crayon_hex": "#FE4C40",
+        "crayon_notes": "Introduced in 1997.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Vivid Tangerine",
+        "year": 1990,
+        "crayon_color": "rgb(255, 153, 128)",
+        "crayon_hex": "#FF9980",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Macaroni and Cheese",
+        "year": 1993,
+        "crayon_color": "rgb(255, 185, 123)",
+        "crayon_hex": "#FFB97B",
+        "crayon_notes": "Introduced in 1993. Also found as \"Macaroni & Cheese\" and \"Macaroni-n-Cheese\".",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Neon Carrot",
+        "year": 1990,
+        "crayon_color": "rgb(255, 153, 51)",
+        "crayon_hex": "#FF9933",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Sunglow",
+        "year": 1990,
+        "crayon_color": "rgb(255, 204, 51)",
+        "crayon_hex": "#FFCC33",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Banana Mania",
+        "year": 1998,
+        "crayon_color": "rgb(251, 231, 178)",
+        "crayon_hex": "#FBE7B2",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Dandelion",
+        "year": 1990,
+        "crayon_color": "rgb(254, 216, 93)",
+        "crayon_hex": "#FED85D",
+        "crayon_notes": "Produced 1990-2017. Reintroduced in 2026.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Crayellow",
+        "year": 2021,
+        "crayon_color": "rgb(241, 214, 81)",
+        "crayon_hex": "#F1D651",
+        "crayon_notes": "Introduced in 2021.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Unmellow Yellow",
+        "year": 1990,
+        "crayon_color": "rgb(255, 238, 102)",
+        "crayon_hex": "#FFEE66",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Canary",
+        "year": 1998,
+        "crayon_color": "rgb(255, 255, 153)",
+        "crayon_hex": "#FFFF99",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Inchworm",
+        "year": 2003,
+        "crayon_color": "rgb(222, 227, 39)",
+        "crayon_hex": "#DEE327",
+        "crayon_notes": "Introduced in 2003.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Electric Lime",
+        "year": 1990,
+        "crayon_color": "rgb(204, 255, 0)",
+        "crayon_hex": "#CCFF00",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Asparagus",
+        "year": 1993,
+        "crayon_color": "rgb(123, 160, 91)",
+        "crayon_hex": "#7BA05B",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Granny Smith Apple",
+        "year": 1993,
+        "crayon_color": "rgb(157, 224, 147)",
+        "crayon_hex": "#9DE093",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Fern",
+        "year": 1998,
+        "crayon_color": "rgb(99, 183, 108)",
+        "crayon_hex": "#63B76C",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Magic Mint",
+        "year": 1990,
+        "crayon_color": "rgb(131, 202, 162)",
+        "crayon_hex": "#83CAA2",
+        "crayon_notes": "Produced 1990–2003.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Shamrock",
+        "year": 1993,
+        "crayon_color": "rgb(51, 204, 153)",
+        "crayon_hex": "#33CC99",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Mountain Meadow",
+        "year": 1998,
+        "crayon_color": "rgb(26, 179, 133)",
+        "crayon_hex": "#1AB385",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Jungle Green",
+        "year": 1990,
+        "crayon_color": "rgb(41, 171, 135)",
+        "crayon_hex": "#29AB87",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Caribbean Green",
+        "year": 1997,
+        "crayon_color": "rgb(0, 204, 153)",
+        "crayon_hex": "#00CC99",
+        "crayon_notes": "Introduced in 1997.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Tropical Rain Forest",
+        "year": 1993,
+        "crayon_color": "rgb(0, 117, 94)",
+        "crayon_hex": "#00755E",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Cool Mint",
+        "year": 2021,
+        "crayon_color": "rgb(221, 235, 236)",
+        "crayon_hex": "#DDEBEC",
+        "crayon_notes": "Introduced in 2021.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Robin's Egg Blue",
+        "year": 1993,
+        "crayon_color": "rgb(0, 204, 204)",
+        "crayon_hex": "#00CCCC",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Teal Blue",
+        "year": 1990,
+        "crayon_color": "rgb(0, 128, 128)",
+        "crayon_hex": "#008080",
+        "crayon_notes": "Produced 1990–2003.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Outer Space",
+        "year": 1998,
+        "crayon_color": "rgb(45, 56, 58)",
+        "crayon_hex": "#2D383A",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Pacific Blue",
+        "year": 1993,
+        "crayon_color": "rgb(28, 169, 201)",
+        "crayon_hex": "#1CA9C9",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Cerulean",
+        "year": 1990,
+        "crayon_color": "rgb(2, 164, 211)",
+        "crayon_hex": "#02A4D3",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Denim",
+        "year": 1993,
+        "crayon_color": "rgb(21, 96, 189)",
+        "crayon_hex": "#1560BD",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Powder Blue",
+        "year": 2021,
+        "crayon_color": "rgb(192, 213, 240)",
+        "crayon_hex": "#C0D5F0",
+        "crayon_notes": "Introduced in 2021.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Bluetiful",
+        "year": 2017,
+        "crayon_color": "rgb(60, 105, 231)",
+        "crayon_hex": "#3C69E7",
+        "crayon_notes": "Introduced in 2017.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Wild Blue Yonder",
+        "year": 2003,
+        "crayon_color": "rgb(162, 173, 208)",
+        "crayon_hex": "#A2ADD0",
+        "crayon_notes": "Introduced in 2003.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Indigo",
+        "year": 1999,
+        "crayon_color": "rgb(79, 105, 198)",
+        "crayon_hex": "#4F69C6",
+        "crayon_notes": "Introduced in 1999.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Manatee",
+        "year": 1998,
+        "crayon_color": "rgb(151, 154, 170)",
+        "crayon_hex": "#979AAA",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Blue Bell",
+        "year": 1998,
+        "crayon_color": "rgb(162, 162, 208)",
+        "crayon_hex": "#A2A2D0",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Purple Heart",
+        "year": 1998,
+        "crayon_color": "rgb(105, 53, 156)",
+        "crayon_hex": "#69359C",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Royal Purple",
+        "year": 1990,
+        "crayon_color": "rgb(120, 81, 169)",
+        "crayon_hex": "#7851A9",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Wisteria",
+        "year": 1993,
+        "crayon_color": "rgb(201, 160, 220)",
+        "crayon_hex": "#C9A0DC",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Vivid Violet",
+        "year": 1997,
+        "crayon_color": "rgb(159, 0, 255)",
+        "crayon_hex": "#9F00FF",
+        "crayon_notes": "Introduced in 1997.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Purple Mountains' Majesty",
+        "year": 1993,
+        "crayon_color": "rgb(150, 120, 182)",
+        "crayon_hex": "#9678B6",
+        "crayon_notes": "Introduced in 1993. Also found as \"Purple Mountain Majesty\" and \"Purple Mountain's Majesty.\"",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Fuchsia",
+        "year": 1990,
+        "crayon_color": "rgb(193, 84, 193)",
+        "crayon_hex": "#C154C1",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Pink Flamingo",
+        "year": 1997,
+        "crayon_color": "rgb(252, 116, 253)",
+        "crayon_hex": "#FC74FD",
+        "crayon_notes": "Introduced in 1997.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Hot Magenta",
+        "year": 1990,
+        "crayon_color": "rgb(255, 0, 204)",
+        "crayon_hex": "#FF00CC",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Purple Pizzazz",
+        "year": 1990,
+        "crayon_color": "rgb(255, 0, 187)",
+        "crayon_hex": "#FF00BB",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Jazzberry Jam",
+        "year": 2003,
+        "crayon_color": "rgb(165, 11, 94)",
+        "crayon_hex": "#A50B5E",
+        "crayon_notes": "Introduced in 2003.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Eggplant",
+        "year": 1998,
+        "crayon_color": "rgb(97, 64, 81)",
+        "crayon_hex": "#614051",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Cerise",
+        "year": 1993,
+        "crayon_color": "rgb(218, 50, 135)",
+        "crayon_hex": "#DA3287",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Wild Strawberry",
+        "year": 1990,
+        "crayon_color": "rgb(255, 67, 164)",
+        "crayon_hex": "#FF43A4",
+        "crayon_notes": "Introduced in 1990.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Cotton Candy",
+        "year": 1998,
+        "crayon_color": "rgb(255, 188, 217)",
+        "crayon_hex": "#FFBCD9",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Razzmatazz",
+        "year": 1993,
+        "crayon_color": "rgb(227, 37, 107)",
+        "crayon_hex": "#E3256B",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Pig Pink",
+        "year": 1998,
+        "crayon_color": "rgb(253, 221, 230)",
+        "crayon_hex": "#FDDDE6",
+        "crayon_notes": "Introduced in 1998. Also called \"Piggy Pink.\"",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Blush",
+        "year": 1990,
+        "crayon_color": "rgb(222, 93, 131)",
+        "crayon_hex": "#DE5D83",
+        "crayon_notes": "Same color as \"Cranberry\" (1998–2005).",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Tickle Me Pink",
+        "year": 1993,
+        "crayon_color": "rgb(252, 137, 172)",
+        "crayon_hex": "#FC89AC",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Mauvelous",
+        "year": 1993,
+        "crayon_color": "rgb(239, 152, 170)",
+        "crayon_hex": "#EF98AA",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Pink Sherbert",
+        "year": 1990,
+        "crayon_color": "rgb(247, 143, 167)",
+        "crayon_hex": "#F78FA7",
+        "crayon_notes": "Same color as \"Brink Pink\" (1998–2005).",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Fuzzy Wuzzy",
+        "year": 1990,
+        "crayon_color": "rgb(204, 102, 102)",
+        "crayon_hex": "#CC6666",
+        "crayon_notes": "Same color as \"Fuzzy Wuzzy Brown\" (1998–2005).",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Beaver",
+        "year": 1998,
+        "crayon_color": "rgb(159, 129, 112)",
+        "crayon_hex": "#9F8170",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Tumbleweed",
+        "year": 1993,
+        "crayon_color": "rgb(222, 170, 136)",
+        "crayon_hex": "#DEAA88",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Desert Sand",
+        "year": 1998,
+        "crayon_color": "rgb(237, 201, 175)",
+        "crayon_hex": "#EDC9AF",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Almond",
+        "year": 1998,
+        "crayon_color": "rgb(239, 222, 205)",
+        "crayon_hex": "#EFDECD",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Shadow",
+        "year": 1998,
+        "crayon_color": "rgb(138, 121, 93)",
+        "crayon_hex": "#8A795D",
+        "crayon_notes": "Introduced in 1998.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Antique Brass",
+        "year": 1998,
+        "crayon_color": "rgb(205, 149, 117)",
+        "crayon_hex": "#CD9575",
+        "crayon_notes": "Introduced in 1998. Metallic; swatch represents nominal hue only.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Timberwolf",
+        "year": 1993,
+        "crayon_color": "rgb(217, 214, 207)",
+        "crayon_hex": "#D9D6CF",
+        "crayon_notes": "Introduced in 1993.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Oatmeal",
+        "year": 2021,
+        "crayon_color": "rgb(217, 218, 210)",
+        "crayon_hex": "#D9DAD2",
+        "crayon_notes": "Introduced in 2021.",
+        "section": "1990 – present"
+    },
+    {
+        "name": "Maximum Red",
+        "year": 1926,
+        "crayon_color": "rgb(217, 33, 33)",
+        "crayon_hex": "#D92121",
+        "crayon_notes": "",
+        "section": "1926: 10 colors"
+    },
+    {
+        "name": "Maximum Yellow Red",
+        "year": 1926,
+        "crayon_color": "rgb(242, 186, 73)",
+        "crayon_hex": "#F2BA49",
+        "crayon_notes": "",
+        "section": "1926: 10 colors"
+    },
+    {
+        "name": "Maximum Yellow",
+        "year": 1926,
+        "crayon_color": "rgb(250, 250, 55)",
+        "crayon_hex": "#FAFA37",
+        "crayon_notes": "",
+        "section": "1926: 10 colors"
+    },
+    {
+        "name": "Maximum Green Yellow",
+        "year": 1926,
+        "crayon_color": "rgb(217, 230, 80)",
+        "crayon_hex": "#D9E650",
+        "crayon_notes": "",
+        "section": "1926: 10 colors"
+    },
+    {
+        "name": "Maximum Green",
+        "year": 1926,
+        "crayon_color": "rgb(94, 140, 49)",
+        "crayon_hex": "#5E8C31",
+        "crayon_notes": "",
+        "section": "1926: 10 colors"
+    },
+    {
+        "name": "Maximum Blue Green",
+        "year": 1926,
+        "crayon_color": "rgb(48, 191, 191)",
+        "crayon_hex": "#30BFBF",
+        "crayon_notes": "",
+        "section": "1926: 10 colors"
+    },
+    {
+        "name": "Maximum Blue",
+        "year": 1926,
+        "crayon_color": "rgb(71, 171, 204)",
+        "crayon_hex": "#47ABCC",
+        "crayon_notes": "",
+        "section": "1926: 10 colors"
+    },
+    {
+        "name": "Maximum Blue Purple",
+        "year": 1926,
+        "crayon_color": "rgb(172, 172, 230)",
+        "crayon_hex": "#ACACE6",
+        "crayon_notes": "",
+        "section": "1926: 10 colors"
+    },
+    {
+        "name": "Maximum Purple",
+        "year": 1926,
+        "crayon_color": "rgb(115, 51, 128)",
+        "crayon_hex": "#733380",
+        "crayon_notes": "",
+        "section": "1926: 10 colors"
+    },
+    {
+        "name": "Maximum Red Purple",
+        "year": 1926,
+        "crayon_color": "rgb(166, 58, 121)",
+        "crayon_hex": "#A63A79",
+        "crayon_notes": "",
+        "section": "1926: 10 colors"
+    },
+    {
+        "name": "Red",
+        "year": 1930,
+        "crayon_color": "rgb(237, 10, 63)",
+        "crayon_hex": "#ED0A3F",
+        "crayon_notes": "",
+        "section": "1930: 12 colors"
+    },
+    {
+        "name": "Red-Orange / Vermillion",
+        "year": 1930,
+        "crayon_color": "rgb(255, 69, 0)",
+        "crayon_hex": "#FF4500",
+        "crayon_notes": "",
+        "section": "1930: 12 colors"
+    },
+    {
+        "name": "Orange",
+        "year": 1930,
+        "crayon_color": "rgb(255, 136, 51)",
+        "crayon_hex": "#FF8833",
+        "crayon_notes": "",
+        "section": "1930: 12 colors"
+    },
+    {
+        "name": "Yellow-Orange / Marigold",
+        "year": 1930,
+        "crayon_color": "rgb(255, 174, 66)",
+        "crayon_hex": "#FFAE42",
+        "crayon_notes": "",
+        "section": "1930: 12 colors"
+    },
+    {
+        "name": "Yellow",
+        "year": 1930,
+        "crayon_color": "rgb(255, 255, 0)",
+        "crayon_hex": "#FFFF00",
+        "crayon_notes": "",
+        "section": "1930: 12 colors"
+    },
+    {
+        "name": "Yellow-Green / Chartreuse",
+        "year": 1930,
+        "crayon_color": "rgb(154, 205, 50)",
+        "crayon_hex": "#9ACD32",
+        "crayon_notes": "",
+        "section": "1930: 12 colors"
+    },
+    {
+        "name": "Green",
+        "year": 1930,
+        "crayon_color": "rgb(0, 128, 1)",
+        "crayon_hex": "#008001",
+        "crayon_notes": "",
+        "section": "1930: 12 colors"
+    },
+    {
+        "name": "Blue-Green / Aquamarine",
+        "year": 1930,
+        "crayon_color": "rgb(13, 152, 186)",
+        "crayon_hex": "#0D98BA",
+        "crayon_notes": "",
+        "section": "1930: 12 colors"
+    },
+    {
+        "name": "Blue",
+        "year": 1930,
+        "crayon_color": "rgb(0, 102, 255)",
+        "crayon_hex": "#0066FF",
+        "crayon_notes": "",
+        "section": "1930: 12 colors"
+    },
+    {
+        "name": "Blue-Violet / Indigo",
+        "year": 1930,
+        "crayon_color": "rgb(138, 43, 226)",
+        "crayon_hex": "#8A2BE2",
+        "crayon_notes": "",
+        "section": "1930: 12 colors"
+    },
+    {
+        "name": "Violet",
+        "year": 1930,
+        "crayon_color": "rgb(127, 0, 255)",
+        "crayon_hex": "#7F00FF",
+        "crayon_notes": "",
+        "section": "1930: 12 colors"
+    },
+    {
+        "name": "Red-Violet / Magenta",
+        "year": 1930,
+        "crayon_color": "rgb(199, 21, 133)",
+        "crayon_hex": "#C71585",
+        "crayon_notes": "",
+        "section": "1930: 12 colors"
+    },
+    {
+        "name": "Blue (1903)",
+        "year": 1935,
+        "crayon_color": "rgb(46, 180, 230)",
+        "crayon_hex": "#2EB4E6",
+        "crayon_notes": "",
+        "section": "Adjustments in 1935 and 1949"
+    },
+    {
+        "name": "Blue (1935)",
+        "year": 1935,
+        "crayon_color": "rgb(69, 112, 230)",
+        "crayon_hex": "#4570E6",
+        "crayon_notes": "",
+        "section": "Adjustments in 1935 and 1949"
+    },
+    {
+        "name": "Violet (1930)",
+        "year": 1935,
+        "crayon_color": "rgb(131, 89, 163)",
+        "crayon_hex": "#8359A3",
+        "crayon_notes": "",
+        "section": "Adjustments in 1935 and 1949"
+    },
+    {
+        "name": "Violet (1949)",
+        "year": 1935,
+        "crayon_color": "rgb(100, 86, 183)",
+        "crayon_hex": "#6456B7",
+        "crayon_notes": "",
+        "section": "Adjustments in 1935 and 1949"
+    },
+    {
+        "name": "Red",
+        "year": 1958,
+        "crayon_color": "rgb(255, 0, 0)",
+        "crayon_hex": "#FF0000",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Orange-Red",
+        "year": 1958,
+        "crayon_color": "rgb(255, 104, 31)",
+        "crayon_hex": "#FF681F",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Red-Orange",
+        "year": 1958,
+        "crayon_color": "rgb(255, 69, 0)",
+        "crayon_hex": "#FF4500",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Orange",
+        "year": 1958,
+        "crayon_color": "rgb(255, 136, 51)",
+        "crayon_hex": "#FF8833",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Yellow-Orange",
+        "year": 1958,
+        "crayon_color": "rgb(255, 174, 66)",
+        "crayon_hex": "#FFAE42",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Orange-Yellow",
+        "year": 1958,
+        "crayon_color": "rgb(245, 189, 31)",
+        "crayon_hex": "#F5BD1F",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Yellow",
+        "year": 1958,
+        "crayon_color": "rgb(255, 255, 0)",
+        "crayon_hex": "#FFFF00",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Green-Yellow",
+        "year": 1958,
+        "crayon_color": "rgb(173, 255, 47)",
+        "crayon_hex": "#ADFF2F",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Yellow-Green",
+        "year": 1958,
+        "crayon_color": "rgb(154, 205, 50)",
+        "crayon_hex": "#9ACD32",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Green",
+        "year": 1958,
+        "crayon_color": "rgb(0, 128, 1)",
+        "crayon_hex": "#008001",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Blue-Green",
+        "year": 1958,
+        "crayon_color": "rgb(13, 152, 186)",
+        "crayon_hex": "#0D98BA",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Green-Blue",
+        "year": 1958,
+        "crayon_color": "rgb(17, 100, 180)",
+        "crayon_hex": "#1164B4",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Blue",
+        "year": 1958,
+        "crayon_color": "rgb(0, 0, 255)",
+        "crayon_hex": "#0000FF",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Violet-Blue",
+        "year": 1958,
+        "crayon_color": "rgb(50, 74, 178)",
+        "crayon_hex": "#324AB2",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Blue-Violet",
+        "year": 1958,
+        "crayon_color": "rgb(138, 43, 226)",
+        "crayon_hex": "#8A2BE2",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Violet",
+        "year": 1958,
+        "crayon_color": "rgb(127, 0, 255)",
+        "crayon_hex": "#7F00FF",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Red-Violet",
+        "year": 1958,
+        "crayon_color": "rgb(199, 21, 133)",
+        "crayon_hex": "#C71585",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Violet-Red",
+        "year": 1958,
+        "crayon_color": "rgb(247, 83, 148)",
+        "crayon_hex": "#F75394",
+        "crayon_notes": "",
+        "section": "1958: 18 colors"
+    },
+    {
+        "name": "Red",
+        "year": 1958,
+        "crayon_color": "rgb(237, 10, 63)",
+        "crayon_hex": "#ED0A3F",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Maroon",
+        "year": 1958,
+        "crayon_color": "rgb(195, 33, 72)",
+        "crayon_hex": "#C32148",
+        "crayon_notes": "Same color as \"Dark Red\" (1949–1957).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Brick Red",
+        "year": 1958,
+        "crayon_color": "rgb(203, 65, 84)",
+        "crayon_hex": "#CB4154",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Indian Red",
+        "year": 1958,
+        "crayon_color": "rgb(205, 92, 92)",
+        "crayon_hex": "#CD5C5C",
+        "crayon_notes": "Same color as \"Chestnut\" (1999–present).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Bittersweet",
+        "year": 1958,
+        "crayon_color": "rgb(254, 111, 94)",
+        "crayon_hex": "#FE6F5E",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Burnt Orange",
+        "year": 1958,
+        "crayon_color": "rgb(204, 85, 0)",
+        "crayon_hex": "#CC5500",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Red-Orange",
+        "year": 1958,
+        "crayon_color": "rgb(255, 63, 52)",
+        "crayon_hex": "#FF3F34",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Orange",
+        "year": 1958,
+        "crayon_color": "rgb(255, 136, 51)",
+        "crayon_hex": "#FF8833",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Yellow-Orange",
+        "year": 1958,
+        "crayon_color": "rgb(255, 174, 66)",
+        "crayon_hex": "#FFAE42",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Goldenrod",
+        "year": 1958,
+        "crayon_color": "rgb(218, 165, 32)",
+        "crayon_hex": "#DAA520",
+        "crayon_notes": "Same color as \"Medium Chrome Yellow\" (1903–1910) and \"Medium Yellow\" (1903–1957).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Yellow",
+        "year": 1958,
+        "crayon_color": "rgb(255, 255, 0)",
+        "crayon_hex": "#FFFF00",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Green-Yellow",
+        "year": 1958,
+        "crayon_color": "rgb(241, 231, 136)",
+        "crayon_hex": "#F1E788",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Spring Green",
+        "year": 1958,
+        "crayon_color": "rgb(236, 235, 189)",
+        "crayon_hex": "#ECEBBD",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Olive Green",
+        "year": 1958,
+        "crayon_color": "rgb(181, 179, 92)",
+        "crayon_hex": "#B5B35C",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Yellow-Green",
+        "year": 1958,
+        "crayon_color": "rgb(154, 205, 50)",
+        "crayon_hex": "#9ACD32",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Forest Green",
+        "year": 1958,
+        "crayon_color": "rgb(34, 139, 34)",
+        "crayon_hex": "#228B22",
+        "crayon_notes": "Same color as \"Dark Green\" (1949–1957).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Sea Green",
+        "year": 1958,
+        "crayon_color": "rgb(46, 139, 87)",
+        "crayon_hex": "#2E8B57",
+        "crayon_notes": "Same color as \"Light Green\" (1949–1957).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Green",
+        "year": 1958,
+        "crayon_color": "rgb(0, 128, 1)",
+        "crayon_hex": "#008001",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Pine Green",
+        "year": 1958,
+        "crayon_color": "rgb(1, 121, 111)",
+        "crayon_hex": "#01796F",
+        "crayon_notes": "Same color as \"Dark Chrome Green\" (1903–1910) and \"Dark Green\" (1903–1949).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Light Blue",
+        "year": 1958,
+        "crayon_color": "rgb(173, 216, 230)",
+        "crayon_hex": "#ADD8E6",
+        "crayon_notes": "Discontinued in 1958; replaced by Turquoise Blue.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Aquamarine",
+        "year": 1958,
+        "crayon_color": "rgb(69, 139, 116)",
+        "crayon_hex": "#458B74",
+        "crayon_notes": "Same color as \"Light Turquoise Blue\" (1949–1957).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Sky Blue",
+        "year": 1958,
+        "crayon_color": "rgb(118, 215, 234)",
+        "crayon_hex": "#76D7EA",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Blue-Green",
+        "year": 1958,
+        "crayon_color": "rgb(0, 149, 183)",
+        "crayon_hex": "#0095B7",
+        "crayon_notes": "Same color as \"Middle Blue Green\" (1949–1957).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Cornflower",
+        "year": 1958,
+        "crayon_color": "rgb(147, 204, 234)",
+        "crayon_hex": "#93CCEA",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Navy Blue",
+        "year": 1958,
+        "crayon_color": "rgb(0, 102, 204)",
+        "crayon_hex": "#0066CC",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Midnight Blue",
+        "year": 1958,
+        "crayon_color": "rgb(0, 70, 140)",
+        "crayon_hex": "#00468C",
+        "crayon_notes": "Same color as \"Prussian Blue\" (1903–1957).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Blue",
+        "year": 1958,
+        "crayon_color": "rgb(0, 102, 255)",
+        "crayon_hex": "#0066FF",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Cadet Blue",
+        "year": 1958,
+        "crayon_color": "rgb(169, 178, 195)",
+        "crayon_hex": "#A9B2C3",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Periwinkle",
+        "year": 1958,
+        "crayon_color": "rgb(195, 205, 230)",
+        "crayon_hex": "#C3CDE6",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Blue-Violet",
+        "year": 1958,
+        "crayon_color": "rgb(100, 86, 183)",
+        "crayon_hex": "#6456B7",
+        "crayon_notes": "Same color as \"Violet\" (1949–1957).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Violet",
+        "year": 1958,
+        "crayon_color": "rgb(131, 89, 163)",
+        "crayon_hex": "#8359A3",
+        "crayon_notes": "On labels \"Violet (Purple)\".",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Brilliant Rose",
+        "year": 1958,
+        "crayon_color": "rgb(230, 103, 206)",
+        "crayon_hex": "#E667CE",
+        "crayon_notes": "Discontinued in 1958; replaced by Magenta.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Plum",
+        "year": 1958,
+        "crayon_color": "rgb(132, 49, 121)",
+        "crayon_hex": "#843179",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Orchid",
+        "year": 1958,
+        "crayon_color": "rgb(226, 156, 210)",
+        "crayon_hex": "#E29CD2",
+        "crayon_notes": "Same color as \"Medium Red-Violet\" (1949–1958).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Thistle",
+        "year": 1958,
+        "crayon_color": "rgb(235, 176, 215)",
+        "crayon_hex": "#EBB0D7",
+        "crayon_notes": "Same color as \"Light Magenta\" (1949–1958). \"Retired\" in 1999.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Mulberry",
+        "year": 1958,
+        "crayon_color": "rgb(200, 80, 155)",
+        "crayon_hex": "#C8509B",
+        "crayon_notes": "\"Retired\" in 2003.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Red-Violet",
+        "year": 1958,
+        "crayon_color": "rgb(187, 51, 133)",
+        "crayon_hex": "#BB3385",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Lavender",
+        "year": 1958,
+        "crayon_color": "rgb(251, 174, 210)",
+        "crayon_hex": "#FBAED2",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Carnation Pink",
+        "year": 1958,
+        "crayon_color": "rgb(255, 166, 201)",
+        "crayon_hex": "#FFA6C9",
+        "crayon_notes": "Same color as \"Rose Pink\" (1903–1957).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Violet-Red",
+        "year": 1958,
+        "crayon_color": "rgb(247, 70, 138)",
+        "crayon_hex": "#F7468A",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Salmon",
+        "year": 1958,
+        "crayon_color": "rgb(255, 145, 164)",
+        "crayon_hex": "#FF91A4",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Mahogany",
+        "year": 1958,
+        "crayon_color": "rgb(202, 52, 53)",
+        "crayon_hex": "#CA3435",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Melon",
+        "year": 1958,
+        "crayon_color": "rgb(254, 186, 173)",
+        "crayon_hex": "#FEBAAD",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Burnt Sienna",
+        "year": 1958,
+        "crayon_color": "rgb(233, 116, 81)",
+        "crayon_hex": "#E97451",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Brown",
+        "year": 1958,
+        "crayon_color": "rgb(175, 89, 62)",
+        "crayon_hex": "#AF593E",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Sepia",
+        "year": 1958,
+        "crayon_color": "rgb(158, 91, 64)",
+        "crayon_hex": "#9E5B40",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Raw Sienna",
+        "year": 1958,
+        "crayon_color": "rgb(210, 125, 70)",
+        "crayon_hex": "#D27D46",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Tan",
+        "year": 1958,
+        "crayon_color": "rgb(217, 154, 108)",
+        "crayon_hex": "#D99A6C",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Peach",
+        "year": 1958,
+        "crayon_color": "rgb(255, 203, 164)",
+        "crayon_hex": "#FFCBA4",
+        "crayon_notes": "Same color as \"Flesh Tint\" (1903–1949), \"Flesh\" (1949–1956, 1958–1962), and \"Pink Beige\" (1956–1957).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Apricot",
+        "year": 1958,
+        "crayon_color": "rgb(253, 213, 177)",
+        "crayon_hex": "#FDD5B1",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Gold",
+        "year": 1958,
+        "crayon_color": "rgb(165, 124, 0)",
+        "crayon_hex": "#A57C00",
+        "crayon_notes": "Metallic; swatch represents nominal hue only.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Silver",
+        "year": 1958,
+        "crayon_color": "rgb(170, 169, 173)",
+        "crayon_hex": "#AAA9AD",
+        "crayon_notes": "Metallic; swatch represents nominal hue only.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Copper",
+        "year": 1958,
+        "crayon_color": "rgb(184, 115, 51)",
+        "crayon_hex": "#B87333",
+        "crayon_notes": "Metallic; swatch represents nominal hue only.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Black",
+        "year": 1958,
+        "crayon_color": "rgb(0, 0, 0)",
+        "crayon_hex": "#000000",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Gray",
+        "year": 1958,
+        "crayon_color": "rgb(139, 134, 128)",
+        "crayon_hex": "#8B8680",
+        "crayon_notes": "Same color as \"Neutral Gray\" (1926–1956).",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "White",
+        "year": 1958,
+        "crayon_color": "rgb(255, 255, 255)",
+        "crayon_hex": "#FFFFFF",
+        "crayon_notes": "",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Dandelion",
+        "year": 1990,
+        "crayon_color": "rgb(254, 216, 93)",
+        "crayon_hex": "#FED85D",
+        "crayon_notes": "Produced 1990-2017. Reintroduced in 2026. Took the place of one of the eight colors retired in 1990.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Wild Strawberry",
+        "year": 1990,
+        "crayon_color": "rgb(255, 67, 164)",
+        "crayon_hex": "#FF43A4",
+        "crayon_notes": "Introduced in 1990. Took the place of one of the eight colors retired in 1990.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Vivid Tangerine",
+        "year": 1990,
+        "crayon_color": "rgb(255, 153, 128)",
+        "crayon_hex": "#FF9980",
+        "crayon_notes": "Introduced in 1990. Took the place of one of the eight colors retired in 1990.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Fuchsia",
+        "year": 1990,
+        "crayon_color": "rgb(193, 84, 193)",
+        "crayon_hex": "#C154C1",
+        "crayon_notes": "Introduced in 1990. Took the place of one of the eight colors retired in 1990.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Teal Blue",
+        "year": 1990,
+        "crayon_color": "rgb(0, 128, 128)",
+        "crayon_hex": "#008080",
+        "crayon_notes": "Produced 1990–2003. Took the place of one of the eight colors retired in 1990.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Royal Purple",
+        "year": 1990,
+        "crayon_color": "rgb(120, 81, 169)",
+        "crayon_hex": "#7851A9",
+        "crayon_notes": "Introduced in 1990. Took the place of one of the eight colors retired in 1990.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Jungle Green",
+        "year": 1990,
+        "crayon_color": "rgb(41, 171, 135)",
+        "crayon_hex": "#29AB87",
+        "crayon_notes": "Introduced in 1990. Took the place of one of the eight colors retired in 1990.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Cerulean",
+        "year": 1990,
+        "crayon_color": "rgb(2, 164, 211)",
+        "crayon_hex": "#02A4D3",
+        "crayon_notes": "Introduced in 1990. Took the place of one of the eight colors retired in 1990.",
+        "section": "Collector's Colors, 1991 — the tin's 64, reconstructed"
+    },
+    {
+        "name": "Maize",
+        "year": 1958,
+        "crayon_color": "rgb(242, 198, 73)",
+        "crayon_hex": "#F2C649",
+        "crayon_notes": "Same color as \"Gold Ochre\" (1903–1957). One of eight colors \"retired\" in 1990. Sold in the 1991 Collector's Colors tin.",
+        "section": "Collector's Colors, 1991 — the eight retired colors"
+    },
+    {
+        "name": "Raw Umber",
+        "year": 1958,
+        "crayon_color": "rgb(130, 102, 68)",
+        "crayon_hex": "#826644",
+        "crayon_notes": "One of eight colors \"retired\" in 1990. Sold in the 1991 Collector's Colors tin.",
+        "section": "Collector's Colors, 1991 — the eight retired colors"
+    },
+    {
+        "name": "Blue-Gray",
+        "year": 1958,
+        "crayon_color": "rgb(102, 153, 204)",
+        "crayon_hex": "#6699CC",
+        "crayon_notes": "One of eight colors \"retired\" in 1990. Sold in the 1991 Collector's Colors tin.",
+        "section": "Collector's Colors, 1991 — the eight retired colors"
+    },
+    {
+        "name": "Lemon Yellow",
+        "year": 1958,
+        "crayon_color": "rgb(255, 244, 79)",
+        "crayon_hex": "#FFF44F",
+        "crayon_notes": "Same color as \"Light Yellow\" (1903–1958). One of eight colors \"retired\" in 1990. Sold in the 1991 Collector's Colors tin.",
+        "section": "Collector's Colors, 1991 — the eight retired colors"
+    },
+    {
+        "name": "Green-Blue",
+        "year": 1958,
+        "crayon_color": "rgb(40, 135, 200)",
+        "crayon_hex": "#2887C8",
+        "crayon_notes": "One of eight colors \"retired\" in 1990. Sold in the 1991 Collector's Colors tin.",
+        "section": "Collector's Colors, 1991 — the eight retired colors"
+    },
+    {
+        "name": "Orange-Yellow",
+        "year": 1958,
+        "crayon_color": "rgb(245, 189, 31)",
+        "crayon_hex": "#F5BD1F",
+        "crayon_notes": "One of eight colors \"retired\" in 1990. Sold in the 1991 Collector's Colors tin.",
+        "section": "Collector's Colors, 1991 — the eight retired colors"
+    },
+    {
+        "name": "Orange-Red",
+        "year": 1958,
+        "crayon_color": "rgb(255, 83, 73)",
+        "crayon_hex": "#FF5349",
+        "crayon_notes": "One of eight colors \"retired\" in 1990. Sold in the 1991 Collector's Colors tin.",
+        "section": "Collector's Colors, 1991 — the eight retired colors"
+    },
+    {
+        "name": "Violet-Blue",
+        "year": 1958,
+        "crayon_color": "rgb(118, 110, 200)",
+        "crayon_hex": "#766EC8",
+        "crayon_notes": "Same color as Blue-Violet (1930–1958). One of eight colors \"retired\" in 1990. Sold in the 1991 Collector's Colors tin.",
+        "section": "Collector's Colors, 1991 — the eight retired colors"
+    },
+    {
+        "name": "Deepest Almond",
+        "year": 2020,
+        "crayon_color": "rgb(81, 53, 41)",
+        "crayon_hex": "#513529",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Extra Deep Almond",
+        "year": 2020,
+        "crayon_color": "rgb(110, 80, 70)",
+        "crayon_hex": "#6E5046",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Very Deep Almond",
+        "year": 2020,
+        "crayon_color": "rgb(136, 96, 94)",
+        "crayon_hex": "#88605E",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Deep Almond",
+        "year": 2020,
+        "crayon_color": "rgb(152, 106, 90)",
+        "crayon_hex": "#986A5A",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Medium Deep Almond",
+        "year": 2020,
+        "crayon_color": "rgb(172, 128, 101)",
+        "crayon_hex": "#AC8065",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Medium Almond",
+        "year": 2020,
+        "crayon_color": "rgb(209, 156, 125)",
+        "crayon_hex": "#D19C7D",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Light Medium Almond",
+        "year": 2020,
+        "crayon_color": "rgb(224, 181, 164)",
+        "crayon_hex": "#E0B5A4",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Light Almond",
+        "year": 2020,
+        "crayon_color": "rgb(230, 185, 179)",
+        "crayon_hex": "#E6B9B3",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Very Light Almond",
+        "year": 2020,
+        "crayon_color": "rgb(230, 210, 211)",
+        "crayon_hex": "#E6D2D3",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Extra Light Almond",
+        "year": 2020,
+        "crayon_color": "rgb(238, 230, 207)",
+        "crayon_hex": "#EEE6CF",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Extra Deep Golden",
+        "year": 2020,
+        "crayon_color": "rgb(95, 69, 46)",
+        "crayon_hex": "#5F452E",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Deep Golden",
+        "year": 2020,
+        "crayon_color": "rgb(141, 91, 40)",
+        "crayon_hex": "#8D5B28",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Medium Deep Golden",
+        "year": 2020,
+        "crayon_color": "rgb(161, 107, 79)",
+        "crayon_hex": "#A16B4F",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Medium Golden",
+        "year": 2020,
+        "crayon_color": "rgb(222, 162, 108)",
+        "crayon_hex": "#DEA26C",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Light Medium Golden",
+        "year": 2020,
+        "crayon_color": "rgb(240, 201, 162)",
+        "crayon_hex": "#F0C9A2",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Light Golden",
+        "year": 2020,
+        "crayon_color": "rgb(237, 219, 199)",
+        "crayon_hex": "#EDDBC7",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Very Light Golden",
+        "year": 2020,
+        "crayon_color": "rgb(240, 223, 207)",
+        "crayon_hex": "#F0DFCF",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Extra Deep Rose",
+        "year": 2020,
+        "crayon_color": "rgb(108, 77, 75)",
+        "crayon_hex": "#6C4D4B",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Very Deep Rose",
+        "year": 2020,
+        "crayon_color": "rgb(143, 108, 104)",
+        "crayon_hex": "#8F6C68",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Deep Rose",
+        "year": 2020,
+        "crayon_color": "rgb(184, 111, 105)",
+        "crayon_hex": "#B86F69",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Medium Deep Rose",
+        "year": 2020,
+        "crayon_color": "rgb(238, 142, 153)",
+        "crayon_hex": "#EE8E99",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Light Medium Rose",
+        "year": 2020,
+        "crayon_color": "rgb(244, 175, 178)",
+        "crayon_hex": "#F4AFB2",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Light Rose",
+        "year": 2020,
+        "crayon_color": "rgb(250, 199, 195)",
+        "crayon_hex": "#FAC7C3",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Very Light Rose",
+        "year": 2020,
+        "crayon_color": "rgb(247, 225, 227)",
+        "crayon_hex": "#F7E1E3",
+        "crayon_notes": "",
+        "section": "Colors of the World, 2020"
+    },
+    {
+        "name": "Big Dip O' Ruby",
+        "year": 2001,
+        "crayon_color": "rgb(156, 37, 66)",
+        "crayon_hex": "#9C2542",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Bittersweet Shimmer",
+        "year": 2001,
+        "crayon_color": "rgb(191, 79, 81)",
+        "crayon_hex": "#BF4F51",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Alloy Orange",
+        "year": 2001,
+        "crayon_color": "rgb(196, 98, 16)",
+        "crayon_hex": "#C46210",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Blast Off Bronze",
+        "year": 2001,
+        "crayon_color": "rgb(165, 113, 100)",
+        "crayon_hex": "#A57164",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Gold Fusion",
+        "year": 2001,
+        "crayon_color": "rgb(133, 117, 78)",
+        "crayon_hex": "#85754E",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Robot Canary",
+        "year": 2001,
+        "crayon_color": "rgb(156, 124, 56)",
+        "crayon_hex": "#9C7C38",
+        "crayon_notes": "Known as \"Metallic Sunburst\" (2001–2019).",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Cheese Grater",
+        "year": 2019,
+        "crayon_color": "rgb(200, 159, 86)",
+        "crayon_hex": "#C89F56",
+        "crayon_notes": "Introduced in 2019.",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Gold Medal",
+        "year": 2019,
+        "crayon_color": "rgb(197, 188, 66)",
+        "crayon_hex": "#C5BC42",
+        "crayon_notes": "Introduced in 2019.",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Sheen Green",
+        "year": 2001,
+        "crayon_color": "rgb(143, 212, 0)",
+        "crayon_hex": "#8FD400",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Petrified Forest",
+        "year": 2019,
+        "crayon_color": "rgb(0, 91, 57)",
+        "crayon_hex": "#005B39",
+        "crayon_notes": "Introduced in 2019.",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Illuminating Emerald",
+        "year": 2001,
+        "crayon_color": "rgb(49, 145, 119)",
+        "crayon_hex": "#319177",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Metallic Seaweed",
+        "year": 2001,
+        "crayon_color": "rgb(10, 126, 140)",
+        "crayon_hex": "#0A7E8C",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Steel Blue",
+        "year": 2001,
+        "crayon_color": "rgb(0, 129, 171)",
+        "crayon_hex": "#0081AB",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Acid Wash Jeans",
+        "year": 2019,
+        "crayon_color": "rgb(92, 178, 197)",
+        "crayon_hex": "#5CB2C5",
+        "crayon_notes": "Introduced in 2019.",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Cobalt Cool",
+        "year": 2019,
+        "crayon_color": "rgb(2, 138, 174)",
+        "crayon_hex": "#028AAE",
+        "crayon_notes": "Introduced in 2019.",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "B'dazzled Blue",
+        "year": 2001,
+        "crayon_color": "rgb(46, 88, 148)",
+        "crayon_hex": "#2E5894",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Iron Indigo",
+        "year": 2019,
+        "crayon_color": "rgb(24, 79, 161)",
+        "crayon_hex": "#184FA1",
+        "crayon_notes": "Introduced in 2019.",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Cyber Grape",
+        "year": 2001,
+        "crayon_color": "rgb(88, 66, 124)",
+        "crayon_hex": "#58427C",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Razzmic Berry",
+        "year": 2001,
+        "crayon_color": "rgb(141, 78, 133)",
+        "crayon_hex": "#8D4E85",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Shimmering Blush",
+        "year": 2001,
+        "crayon_color": "rgb(217, 134, 149)",
+        "crayon_hex": "#D98695",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Rose Gold",
+        "year": 2019,
+        "crayon_color": "rgb(200, 140, 164)",
+        "crayon_hex": "#C88CA4",
+        "crayon_notes": "Introduced in 2019.",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Magnetic Magenta",
+        "year": 2019,
+        "crayon_color": "rgb(191, 57, 129)",
+        "crayon_hex": "#BF3981",
+        "crayon_notes": "Introduced in 2019.",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Deep Space Sparkle",
+        "year": 2001,
+        "crayon_color": "rgb(74, 100, 108)",
+        "crayon_hex": "#4A646C",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Sonic Silver",
+        "year": 2001,
+        "crayon_color": "rgb(117, 117, 117)",
+        "crayon_hex": "#757575",
+        "crayon_notes": "",
+        "section": "Metallic, 2001 and 2019"
+    },
+    {
+        "name": "Crimson Clash",
+        "year": 2019,
+        "crayon_color": "rgb(253, 14, 53)",
+        "crayon_hex": "#FD0E35",
+        "crayon_notes": "Glitter #CDC5C2.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Confetti Sunset",
+        "year": 2019,
+        "crayon_color": "rgb(254, 76, 64)",
+        "crayon_hex": "#FE4C40",
+        "crayon_notes": "Rainbow glitter.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Campfire Flicker",
+        "year": 2019,
+        "crayon_color": "rgb(255, 117, 56)",
+        "crayon_hex": "#FF7538",
+        "crayon_notes": "Glitter #77DDE7.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Shredded Cheddar",
+        "year": 2019,
+        "crayon_color": "rgb(255, 185, 123)",
+        "crayon_hex": "#FFB97B",
+        "crayon_notes": "Glitter #E7C697.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Golden Dust",
+        "year": 2019,
+        "crayon_color": "rgb(252, 214, 103)",
+        "crayon_hex": "#FCD667",
+        "crayon_notes": "Glitter #77DDE7.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Sun Shower",
+        "year": 2019,
+        "crayon_color": "rgb(252, 232, 131)",
+        "crayon_hex": "#FCE883",
+        "crayon_notes": "Rainbow glitter.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Wild Wasabi",
+        "year": 2019,
+        "crayon_color": "rgb(197, 227, 132)",
+        "crayon_hex": "#C5E384",
+        "crayon_notes": "Glitter #CDC5C2.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Gritty Green",
+        "year": 2019,
+        "crayon_color": "rgb(28, 172, 120)",
+        "crayon_hex": "#1CAC78",
+        "crayon_notes": "Glitter #77DDE7.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Tropical Shower",
+        "year": 2019,
+        "crayon_color": "rgb(0, 117, 94)",
+        "crayon_hex": "#00755E",
+        "crayon_notes": "Rainbow glitter.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Fire in the Sky",
+        "year": 2019,
+        "crayon_color": "rgb(128, 218, 235)",
+        "crayon_hex": "#80DAEB",
+        "crayon_notes": "Glitter #ED0A3F.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Blue Blazes",
+        "year": 2019,
+        "crayon_color": "rgb(31, 117, 254)",
+        "crayon_hex": "#1F75FE",
+        "crayon_notes": "Glitter #CDC5C2.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Aqua Fizz",
+        "year": 2019,
+        "crayon_color": "rgb(0, 157, 196)",
+        "crayon_hex": "#009DC4",
+        "crayon_notes": "Rainbow glitter.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Night Sky",
+        "year": 2019,
+        "crayon_color": "rgb(79, 105, 198)",
+        "crayon_hex": "#4F69C6",
+        "crayon_notes": "Glitter #CDC5C2.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Poppin' Purple",
+        "year": 2019,
+        "crayon_color": "rgb(120, 81, 169)",
+        "crayon_hex": "#7851A9",
+        "crayon_notes": "Glitter #ED0A3F.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Red Slaw",
+        "year": 2019,
+        "crayon_color": "rgb(192, 68, 143)",
+        "crayon_hex": "#C0448F",
+        "crayon_notes": "Glitter #E7C697.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Maroon Mist",
+        "year": 2019,
+        "crayon_color": "rgb(200, 56, 90)",
+        "crayon_hex": "#C8385A",
+        "crayon_notes": "Glitter #E7C697.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Orchid Explosion",
+        "year": 2019,
+        "crayon_color": "rgb(230, 168, 215)",
+        "crayon_hex": "#E6A8D7",
+        "crayon_notes": "Glitter #77DDE7.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Flamingo Flame",
+        "year": 2019,
+        "crayon_color": "rgb(252, 116, 253)",
+        "crayon_hex": "#FC74FD",
+        "crayon_notes": "Rainbow glitter.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Chocolate Sprinkles",
+        "year": 2019,
+        "crayon_color": "rgb(175, 89, 62)",
+        "crayon_hex": "#AF593E",
+        "crayon_notes": "Glitter #E7C697.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Black Gold",
+        "year": 2019,
+        "crayon_color": "rgb(0, 0, 0)",
+        "crayon_hex": "#000000",
+        "crayon_notes": "Glitter #E7C697.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Gray Glam",
+        "year": 2019,
+        "crayon_color": "rgb(139, 134, 128)",
+        "crayon_hex": "#8B8680",
+        "crayon_notes": "Glitter #CDC5C2.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Silver Sparks",
+        "year": 2019,
+        "crayon_color": "rgb(217, 214, 207)",
+        "crayon_hex": "#D9D6CF",
+        "crayon_notes": "Glitter #CDC5C2.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Diamond Dazzle",
+        "year": 2019,
+        "crayon_color": "rgb(255, 255, 255)",
+        "crayon_hex": "#FFFFFF",
+        "crayon_notes": "Glitter #E7C697.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Lavender Burst",
+        "year": 2019,
+        "crayon_color": "rgb(195, 205, 230)",
+        "crayon_hex": "#C3CDE6",
+        "crayon_notes": "Glitter #77DDE7.",
+        "section": "Crayons with Glitter, 2019"
+    },
+    {
+        "name": "Red",
+        "year": 1903,
+        "crayon_color": "rgb(237, 10, 63)",
+        "crayon_hex": "#ED0A3F",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Maroon",
+        "year": 1949,
+        "crayon_color": "rgb(195, 33, 72)",
+        "crayon_hex": "#C32148",
+        "crayon_notes": "Known as \"Dark Red\", 1949–1958.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Scarlet",
+        "year": 1998,
+        "crayon_color": "rgb(253, 14, 53)",
+        "crayon_hex": "#FD0E35",
+        "crayon_notes": "Known as \"Torch Red\", 1998.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Brick Red",
+        "year": 1958,
+        "crayon_color": "rgb(203, 65, 84)",
+        "crayon_hex": "#CB4154",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Mahogany",
+        "year": 1949,
+        "crayon_color": "rgb(202, 52, 53)",
+        "crayon_hex": "#CA3435",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Chestnut",
+        "year": 1903,
+        "crayon_color": "rgb(185, 78, 72)",
+        "crayon_hex": "#B94E48",
+        "crayon_notes": "Known as \"Indian Red”, 1903-1999.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Mango Tango",
+        "year": 2003,
+        "crayon_color": "rgb(255, 59, 41)",
+        "crayon_hex": "#FF3B29",
+        "crayon_notes": "Replaced \"Teal Blue\" in 2003.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Red-Orange",
+        "year": 1930,
+        "crayon_color": "rgb(255, 63, 52)",
+        "crayon_hex": "#FF3F34",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Sunset Orange",
+        "year": 1997,
+        "crayon_color": "rgb(254, 76, 64)",
+        "crayon_hex": "#FE4C40",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Bittersweet",
+        "year": 1958,
+        "crayon_color": "rgb(254, 111, 94)",
+        "crayon_hex": "#FE6F5E",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Vivid Tangerine",
+        "year": 1990,
+        "crayon_color": "rgb(255, 153, 128)",
+        "crayon_hex": "#FF9980",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Outrageous Orange",
+        "year": 1972,
+        "crayon_color": "rgb(255, 96, 55)",
+        "crayon_hex": "#FF6037",
+        "crayon_notes": "Fluorescent color. Same color as \"Ultra Orange\" (1972–1990).",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Burnt Orange",
+        "year": 1958,
+        "crayon_color": "rgb(204, 85, 0)",
+        "crayon_hex": "#CC5500",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Atomic Tangerine",
+        "year": 1972,
+        "crayon_color": "rgb(255, 153, 102)",
+        "crayon_hex": "#FF9966",
+        "crayon_notes": "Fluorescent color. Same color as \"Ultra Yellow\" (1972–1990).",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Orange",
+        "year": 1903,
+        "crayon_color": "rgb(255, 136, 51)",
+        "crayon_hex": "#FF8833",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Macaroni and Cheese",
+        "year": 1993,
+        "crayon_color": "rgb(255, 185, 123)",
+        "crayon_hex": "#FFB97B",
+        "crayon_notes": "Also found as \"Macaroni & Cheese\" and \"Macaroni-n-Cheese\".",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Neon Carrot",
+        "year": 1990,
+        "crayon_color": "rgb(255, 153, 51)",
+        "crayon_hex": "#FF9933",
+        "crayon_notes": "Fluorescent color.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Yellow-Orange",
+        "year": 1930,
+        "crayon_color": "rgb(255, 174, 66)",
+        "crayon_hex": "#FFAE42",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Banana Mania",
+        "year": 1998,
+        "crayon_color": "rgb(251, 231, 178)",
+        "crayon_hex": "#FBE7B2",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Sunglow",
+        "year": 1990,
+        "crayon_color": "rgb(255, 204, 51)",
+        "crayon_hex": "#FFCC33",
+        "crayon_notes": "Fluorescent color.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Goldenrod",
+        "year": 1903,
+        "crayon_color": "rgb(218, 165, 32)",
+        "crayon_hex": "#DAA520",
+        "crayon_notes": "Known as \"Medium Chrome Yellow\" (1903–?), \"Medium Yellow\" (1903–1958), and \"Banana Bonanza\" (2015–2018).",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Yellow",
+        "year": 1903,
+        "crayon_color": "rgb(255, 255, 0)",
+        "crayon_hex": "#FFFF00",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Unmellow Yellow",
+        "year": 1990,
+        "crayon_color": "rgb(255, 238, 102)",
+        "crayon_hex": "#FFEE66",
+        "crayon_notes": "Fluorescent color.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Green-Yellow",
+        "year": 1958,
+        "crayon_color": "rgb(241, 231, 136)",
+        "crayon_hex": "#F1E788",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Olive Green",
+        "year": 1903,
+        "crayon_color": "rgb(181, 179, 92)",
+        "crayon_hex": "#B5B35C",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Spring Green",
+        "year": 1958,
+        "crayon_color": "rgb(236, 235, 189)",
+        "crayon_hex": "#ECEBBD",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Canary",
+        "year": 1998,
+        "crayon_color": "rgb(255, 255, 153)",
+        "crayon_hex": "#FFFF99",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Inchworm",
+        "year": 2003,
+        "crayon_color": "rgb(222, 227, 39)",
+        "crayon_hex": "#DEE327",
+        "crayon_notes": "Known as \"Inch Worm\", 2003-2005. Replaced \"Magic Mint\" in 2003.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Laser Lemon",
+        "year": 1972,
+        "crayon_color": "rgb(230, 255, 102)",
+        "crayon_hex": "#E6FF66",
+        "crayon_notes": "Fluorescent color. Same color as \"Chartreuse\" (1972–1990).",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Electric Lime",
+        "year": 1990,
+        "crayon_color": "rgb(204, 255, 0)",
+        "crayon_hex": "#CCFF00",
+        "crayon_notes": "Fluorescent color.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Yellow-Green",
+        "year": 1930,
+        "crayon_color": "rgb(154, 205, 50)",
+        "crayon_hex": "#9ACD32",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Asparagus",
+        "year": 1993,
+        "crayon_color": "rgb(123, 160, 91)",
+        "crayon_hex": "#7BA05B",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Granny Smith Apple",
+        "year": 1993,
+        "crayon_color": "rgb(157, 224, 147)",
+        "crayon_hex": "#9DE093",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Screamin' Green",
+        "year": 1972,
+        "crayon_color": "rgb(102, 255, 102)",
+        "crayon_hex": "#66FF66",
+        "crayon_notes": "Fluorescent color. Same color as \"Ultra Green\" (1972–1990).",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Fern",
+        "year": 1998,
+        "crayon_color": "rgb(99, 183, 108)",
+        "crayon_hex": "#63B76C",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Green",
+        "year": 1903,
+        "crayon_color": "rgb(0, 128, 1)",
+        "crayon_hex": "#008001",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Forest Green",
+        "year": 1949,
+        "crayon_color": "rgb(34, 139, 34)",
+        "crayon_hex": "#228B22",
+        "crayon_notes": "Known as \"Dark Green\", 1949–1958.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Sea Green",
+        "year": 1949,
+        "crayon_color": "rgb(46, 139, 87)",
+        "crayon_hex": "#2E8B57",
+        "crayon_notes": "Known as \"Light Green\", 1949–1958.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Shamrock",
+        "year": 1993,
+        "crayon_color": "rgb(51, 204, 153)",
+        "crayon_hex": "#33CC99",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Mountain Meadow",
+        "year": 1998,
+        "crayon_color": "rgb(26, 179, 133)",
+        "crayon_hex": "#1AB385",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Jungle Green",
+        "year": 1990,
+        "crayon_color": "rgb(41, 171, 135)",
+        "crayon_hex": "#29AB87",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Caribbean Green",
+        "year": 1997,
+        "crayon_color": "rgb(0, 204, 153)",
+        "crayon_hex": "#00CC99",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Tropical Rain Forest",
+        "year": 1993,
+        "crayon_color": "rgb(0, 117, 94)",
+        "crayon_hex": "#00755E",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Pine Green",
+        "year": 1903,
+        "crayon_color": "rgb(1, 121, 111)",
+        "crayon_hex": "#01796F",
+        "crayon_notes": "Known as \"Dark Chrome Green\" (\"Chrome Green, Dark\" on labels) or \"Dark Green\", 1903–1949.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Robin's Egg Blue",
+        "year": 1993,
+        "crayon_color": "rgb(0, 204, 204)",
+        "crayon_hex": "#00CCCC",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Aquamarine",
+        "year": 1949,
+        "crayon_color": "rgb(69, 139, 116)",
+        "crayon_hex": "#458B74",
+        "crayon_notes": "Known as \"Light Turquoise Blue\", 1949–1958.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Turquoise Blue",
+        "year": 1935,
+        "crayon_color": "rgb(0, 255, 239)",
+        "crayon_hex": "#00FFEF",
+        "crayon_notes": "Available only in bulk, 1935–1949.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Outer Space",
+        "year": 1998,
+        "crayon_color": "rgb(45, 56, 58)",
+        "crayon_hex": "#2D383A",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Sky Blue",
+        "year": 1958,
+        "crayon_color": "rgb(118, 215, 234)",
+        "crayon_hex": "#76D7EA",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Blue-Green",
+        "year": 1949,
+        "crayon_color": "rgb(0, 149, 183)",
+        "crayon_hex": "#0095B7",
+        "crayon_notes": "Known as \"Middle Blue-Green\", 1949–1958.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Pacific Blue",
+        "year": 1993,
+        "crayon_color": "rgb(28, 169, 201)",
+        "crayon_hex": "#1CA9C9",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Cerulean",
+        "year": 1990,
+        "crayon_color": "rgb(2, 164, 211)",
+        "crayon_hex": "#02A4D3",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Cornflower",
+        "year": 1958,
+        "crayon_color": "rgb(147, 204, 234)",
+        "crayon_hex": "#93CCEA",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Midnight Blue",
+        "year": 1903,
+        "crayon_color": "rgb(0, 70, 140)",
+        "crayon_hex": "#00468C",
+        "crayon_notes": "Known as \"Prussian Blue\", 1903–1958.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Navy Blue",
+        "year": 1958,
+        "crayon_color": "rgb(0, 102, 204)",
+        "crayon_hex": "#0066CC",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Denim",
+        "year": 1993,
+        "crayon_color": "rgb(21, 96, 189)",
+        "crayon_hex": "#1560BD",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Blue",
+        "year": 1949,
+        "crayon_color": "rgb(0, 102, 255)",
+        "crayon_hex": "#0066FF",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Blue Bell",
+        "year": 1998,
+        "crayon_color": "rgb(162, 162, 208)",
+        "crayon_hex": "#A2A2D0",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Cadet Blue",
+        "year": 1958,
+        "crayon_color": "rgb(169, 178, 195)",
+        "crayon_hex": "#A9B2C3",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Periwinkle",
+        "year": 1958,
+        "crayon_color": "rgb(195, 205, 230)",
+        "crayon_hex": "#C3CDE6",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Bluetiful",
+        "year": 2017,
+        "crayon_color": "rgb(60, 105, 231)",
+        "crayon_hex": "#3C69E7",
+        "crayon_notes": "Replaced \"Dandelion\" in 2017.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Indigo",
+        "year": 1999,
+        "crayon_color": "rgb(79, 105, 198)",
+        "crayon_hex": "#4F69C6",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Manatee",
+        "year": 1998,
+        "crayon_color": "rgb(151, 154, 170)",
+        "crayon_hex": "#979AAA",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Wild Blue Yonder",
+        "year": 2003,
+        "crayon_color": "rgb(162, 173, 208)",
+        "crayon_hex": "#A2ADD0",
+        "crayon_notes": "Replaced \"Blizzard Blue\" in 2003.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Blue-Violet",
+        "year": 1949,
+        "crayon_color": "rgb(100, 86, 183)",
+        "crayon_hex": "#6456B7",
+        "crayon_notes": "Known as \"Violet\" 1949–1958.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Purple Mountains' Majesty",
+        "year": 1993,
+        "crayon_color": "rgb(150, 120, 182)",
+        "crayon_hex": "#9678B6",
+        "crayon_notes": "Also found as \"Purple Mountain Majesty\" and \"Purple Mountain's Majesty.\"",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Purple Heart",
+        "year": 1998,
+        "crayon_color": "rgb(105, 53, 156)",
+        "crayon_hex": "#69359C",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Royal Purple",
+        "year": 1990,
+        "crayon_color": "rgb(120, 81, 169)",
+        "crayon_hex": "#7851A9",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Violet (II)",
+        "year": 1930,
+        "crayon_color": "rgb(131, 89, 163)",
+        "crayon_hex": "#8359A3",
+        "crayon_notes": "\"Violet (Purple)\" on labels.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Wisteria",
+        "year": 1993,
+        "crayon_color": "rgb(201, 160, 220)",
+        "crayon_hex": "#C9A0DC",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Vivid Violet",
+        "year": 1997,
+        "crayon_color": "rgb(159, 0, 255)",
+        "crayon_hex": "#9F00FF",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Fuchsia",
+        "year": 1990,
+        "crayon_color": "rgb(193, 84, 193)",
+        "crayon_hex": "#C154C1",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Pink Flamingo",
+        "year": 1997,
+        "crayon_color": "rgb(252, 116, 253)",
+        "crayon_hex": "#FC74FD",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Shocking Pink",
+        "year": 1972,
+        "crayon_color": "rgb(255, 110, 255)",
+        "crayon_hex": "#FF6EFF",
+        "crayon_notes": "Fluorescent color. Same color as \"Ultra Pink\" (1972–1990).",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Razzle Dazzle Rose",
+        "year": 1972,
+        "crayon_color": "rgb(238, 52, 210)",
+        "crayon_hex": "#EE34D2",
+        "crayon_notes": "Fluorescent color. Same color as \"Hot Magenta\" (1972–1990).",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Hot Magenta",
+        "year": 1990,
+        "crayon_color": "rgb(255, 0, 204)",
+        "crayon_hex": "#FF00CC",
+        "crayon_notes": "Fluorescent color.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Orchid",
+        "year": 1949,
+        "crayon_color": "rgb(226, 156, 210)",
+        "crayon_hex": "#E29CD2",
+        "crayon_notes": "Known as \"Medium Red-Violet\", 1949–1958.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Plum",
+        "year": 1958,
+        "crayon_color": "rgb(132, 49, 121)",
+        "crayon_hex": "#843179",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Purple Pizzazz",
+        "year": 1990,
+        "crayon_color": "rgb(255, 0, 187)",
+        "crayon_hex": "#FF00BB",
+        "crayon_notes": "Fluorescent color.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Red-Violet",
+        "year": 1930,
+        "crayon_color": "rgb(187, 51, 133)",
+        "crayon_hex": "#BB3385",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Jazzberry Jam",
+        "year": 2003,
+        "crayon_color": "rgb(165, 11, 94)",
+        "crayon_hex": "#A50B5E",
+        "crayon_notes": "Replaced \"Mulberry\" in 2003.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Eggplant",
+        "year": 1998,
+        "crayon_color": "rgb(97, 64, 81)",
+        "crayon_hex": "#614051",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Magenta",
+        "year": 1903,
+        "crayon_color": "rgb(255, 0, 255)",
+        "crayon_hex": "#FF00FF",
+        "crayon_notes": "Same color as \"Permanent Magenta\" (1903–?).",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Cerise",
+        "year": 1993,
+        "crayon_color": "rgb(218, 50, 135)",
+        "crayon_hex": "#DA3287",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Wild Strawberry",
+        "year": 1990,
+        "crayon_color": "rgb(255, 67, 164)",
+        "crayon_hex": "#FF43A4",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Lavender (III)",
+        "year": 1999,
+        "crayon_color": "rgb(251, 174, 210)",
+        "crayon_hex": "#FBAED2",
+        "crayon_notes": "Same color as \"Thistle\".",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Cotton Candy",
+        "year": 1998,
+        "crayon_color": "rgb(255, 188, 217)",
+        "crayon_hex": "#FFBCD9",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Carnation Pink",
+        "year": 1903,
+        "crayon_color": "rgb(255, 166, 201)",
+        "crayon_hex": "#FFA6C9",
+        "crayon_notes": "Known as \"Rose Pink\" (1903–1958) and \"Pink\" (1903–1917).",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Violet-Red",
+        "year": 1958,
+        "crayon_color": "rgb(247, 70, 138)",
+        "crayon_hex": "#F7468A",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Razzmatazz",
+        "year": 1993,
+        "crayon_color": "rgb(227, 37, 107)",
+        "crayon_hex": "#E3256B",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Piggy Pink",
+        "year": 1998,
+        "crayon_color": "rgb(253, 215, 228)",
+        "crayon_hex": "#FDD7E4",
+        "crayon_notes": "Originally called \"Pig Pink.\"",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Blush",
+        "year": 1998,
+        "crayon_color": "rgb(222, 93, 131)",
+        "crayon_hex": "#DE5D83",
+        "crayon_notes": "Known as \"Cranberry\", 1998–2005.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Tickle Me Pink",
+        "year": 1993,
+        "crayon_color": "rgb(252, 137, 172)",
+        "crayon_hex": "#FC89AC",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Mauvelous",
+        "year": 1993,
+        "crayon_color": "rgb(239, 152, 170)",
+        "crayon_hex": "#EF98AA",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Pink Sherbert",
+        "year": 1998,
+        "crayon_color": "rgb(247, 143, 167)",
+        "crayon_hex": "#F78FA7",
+        "crayon_notes": "Known as \"Brink Pink\", 1998–2005.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Salmon",
+        "year": 1949,
+        "crayon_color": "rgb(255, 145, 164)",
+        "crayon_hex": "#FF91A4",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Radical Red",
+        "year": 1990,
+        "crayon_color": "rgb(255, 53, 94)",
+        "crayon_hex": "#FF355E",
+        "crayon_notes": "Fluorescent color.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Wild Watermelon",
+        "year": 1972,
+        "crayon_color": "rgb(253, 91, 120)",
+        "crayon_hex": "#FD5B78",
+        "crayon_notes": "Fluorescent color. Same color as \"Ultra Red\" (1972–1990).",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Fuzzy Wuzzy",
+        "year": 1998,
+        "crayon_color": "rgb(204, 102, 102)",
+        "crayon_hex": "#CC6666",
+        "crayon_notes": "Known as \"Fuzzy Wuzzy Brown\", 1998–2005.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Melon",
+        "year": 1958,
+        "crayon_color": "rgb(254, 186, 173)",
+        "crayon_hex": "#FEBAAD",
+        "crayon_notes": "Also known as Light Red.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Burnt Sienna",
+        "year": 1903,
+        "crayon_color": "rgb(233, 116, 81)",
+        "crayon_hex": "#E97451",
+        "crayon_notes": "Was to be retired in 2003, alongside four other colors, but was saved in a campaign known as \"Save the Shade\"",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Brown",
+        "year": 1903,
+        "crayon_color": "rgb(175, 89, 62)",
+        "crayon_hex": "#AF593E",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Sepia",
+        "year": 1935,
+        "crayon_color": "rgb(158, 91, 64)",
+        "crayon_hex": "#9E5B40",
+        "crayon_notes": "Available only in bulk, 1935–1939.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Beaver",
+        "year": 1998,
+        "crayon_color": "rgb(159, 129, 112)",
+        "crayon_hex": "#9F8170",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Raw Sienna",
+        "year": 1958,
+        "crayon_color": "rgb(210, 125, 70)",
+        "crayon_hex": "#D27D46",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Tumbleweed",
+        "year": 1993,
+        "crayon_color": "rgb(222, 170, 136)",
+        "crayon_hex": "#DEAA88",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Tan",
+        "year": 1958,
+        "crayon_color": "rgb(217, 154, 108)",
+        "crayon_hex": "#D99A6C",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Desert Sand",
+        "year": 1998,
+        "crayon_color": "rgb(237, 201, 175)",
+        "crayon_hex": "#EDC9AF",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Peach",
+        "year": 1903,
+        "crayon_color": "rgb(255, 203, 164)",
+        "crayon_hex": "#FFCBA4",
+        "crayon_notes": "Known as \"Flesh Tint\" (1903–1949), \"Flesh\" (1949–1956, 1958–1962), and \"Pink Beige\" (1956–1958).",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Apricot",
+        "year": 1958,
+        "crayon_color": "rgb(253, 213, 177)",
+        "crayon_hex": "#FDD5B1",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Almond",
+        "year": 1998,
+        "crayon_color": "rgb(239, 222, 205)",
+        "crayon_hex": "#EFDECD",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Shadow",
+        "year": 1998,
+        "crayon_color": "rgb(138, 121, 93)",
+        "crayon_hex": "#8A795D",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Gold (II)",
+        "year": 1953,
+        "crayon_color": "rgb(230, 190, 138)",
+        "crayon_hex": "#E6BE8A",
+        "crayon_notes": "Metallic; swatch represents nominal hue only. Available only in bulk, 1953–1956.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Silver",
+        "year": 1903,
+        "crayon_color": "rgb(170, 169, 173)",
+        "crayon_hex": "#AAA9AD",
+        "crayon_notes": "Metallic; swatch represents nominal hue only. Available only in bulk, 1915–1944.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Copper",
+        "year": 1903,
+        "crayon_color": "rgb(184, 115, 51)",
+        "crayon_hex": "#B87333",
+        "crayon_notes": "Metallic; swatch represents nominal hue only.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Antique Brass",
+        "year": 1998,
+        "crayon_color": "rgb(205, 149, 117)",
+        "crayon_hex": "#CD9575",
+        "crayon_notes": "Metallic; swatch represents nominal hue only.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Black",
+        "year": 1903,
+        "crayon_color": "rgb(0, 0, 0)",
+        "crayon_hex": "#000000",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Gray",
+        "year": 1926,
+        "crayon_color": "rgb(139, 134, 128)",
+        "crayon_hex": "#8B8680",
+        "crayon_notes": "As \"Middle Grey\", part of the Munsell line, 1926–1944. Spelled \"Grey\" on labels, but \"Gray\" on boxes. Also called \"Neutral Grey\", 1930–1956.",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "Timberwolf",
+        "year": 1993,
+        "crayon_color": "rgb(217, 214, 207)",
+        "crayon_hex": "#D9D6CF",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    },
+    {
+        "name": "White",
+        "year": 1903,
+        "crayon_color": "rgb(255, 255, 255)",
+        "crayon_hex": "#FFFFFF",
+        "crayon_notes": "",
+        "section": "Crayola No. 120"
+    }
+]
